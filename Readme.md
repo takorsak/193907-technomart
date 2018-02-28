@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Татьяна Корсакова](https://up.htmlacademy.ru/htmlcss/20/user/193907).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nikolamarkelov).
 
 ---
 
