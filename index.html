@@ -16,7 +16,7 @@
             Техномарт
             <img src="img/logo-header.png" width="368" height="153" alt="Логотип магазина «Техномарт»">
           </a>
-          <form class="main-header-search-form" action="https://technomart.ru" method="get">
+          <form class="main-header-search-form" action="https://technomart.ru" method="get"><!--post или get? В лекции сказали, что post-->
               <input class="items-font" type="text" name="search" placeholder="Поиск">
           </form>
           <a class="button button-theme-transparent-black" href="#">Закладки</a>
@@ -31,21 +31,21 @@
 
               <p class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="main-header-info">
-              <a class="main-header-telephone" href="tel:+78125550555">+7(812)555-05-55</a>
+              <a class="main-header-telephone" href="tel:+78125550555" aria-label="Телефонный номер компании">+7(812)555-05-55</a>
               <p class="main-header-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
               <ul class="main-header-buttons-list">
                 <li class="button main-header-buttons-item">
-                  <a href="#">Вход</a>
+                  <a href="#" aria-label="Вход в личный кабинет">Вход</a>
                 </li>
                 <li class="button main-header-buttons-item">
-                  <a href="#">Регистрация</a>
+                  <a href="#" aria-label="Регистрация на сайте">Регистрация</a>
                 </li>
               </ul>
 
         </div>
 
-          <nav class="block-body navigation-block-body background-secondary">
+          <nav class="block-body navigation-block-body background-secondary"><!--Правильно ли, что здесь не надо добавлять описание, читалка поймет, что nav - это навигация и так и прочитает?-->
             <ul class="main-menu-navigation-list">
               <li>
                 <a>Главная</a>
@@ -86,26 +86,26 @@
           <div class="block-body-content promo-block-body-content">
             <div class="promo background-warning">
               <span class="promo-title">Материалы</span>
-              <a class="button promo-button" href="#">На любой вкус</a>
+              <a class="button promo-button" href="#" aria-label="В раздел «Материалы»">На любой вкус</a>
             </div>
             <div class="promo background-info">
               <span class="promo-title">Инструмент</span>
-              <a class="button promo-button" href="#">На все случаи</a>
+              <a class="button promo-button" href="#" aria-label="В раздел «Инструмент»">На все случаи</a>
             </div>
             <div class="promo background-violet">
               <span class="promo-title">Техника</span>
-              <a class="button promo-button" href="#">Для стройки</a>
+              <a class="button promo-button" href="#" aria-label="В раздел «Техника»">Для стройки</a>
             </div>
           </div>
 
           <div class="block-body-content promo-block-body-content-content">
             <div class="promo background-aquamarine">
               <span class="promo-title">Скидка 50%</span>
-              <a class="button promo-button" href="#">На 350 товаров</a>
+              <a class="button promo-button" href="#" aria-label="В раздел «Скидки 50%»">На 350 товаров</a>
             </div>
             <div class="promo background-warning">
               <span class="promo-title">Доставка</span>
-              <a class="button promo-button" href="#">Бесплатно</a>
+              <a class="button promo-button" href="#" aria-label="В раздел «Доставка»">Бесплатно</a>
             </div>
             <div class="slider">
               <h2 class="visually-hidden">Слайдер с товарами</h2>
@@ -208,42 +208,42 @@
           <div class="block-body-content pop-brands-block-body-content">
             <ul class="pop-brands-list">
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда Bosch">
                   <img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда Makita">
                   <img src="img/Makita.png" width="123" height="40" alt="Логотип Makita">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда Dewalt">
                   <img src="img/DeWALT.png" width="146" height="44" alt="Логотип Dewalt">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда Интерскол">
                   <img src="img/interskol.png" width="184" height="32" alt="Логотип Интерскол">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда Hitachi">
                   <img src="img/Hitachi.png" width="169" height="31" alt="Логотип Hitachi">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда LG">
                   <img src="img/LG.png" width="121" height="73" alt="Логотип LG">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда AEG">
                   <img src="img/AEG.png" width="151" height="96" alt="Логотип AEG">
                 </a>
               </li>
               <li class="pop-brand-item">
-                <a href="#">
+                <a href="#" aria-label="К товарам бренда Metabo">
                   <img src="img/Metabo.png" width="204" height="69" alt="Логотип Metabo">
                 </a>
               </li>
@@ -312,18 +312,45 @@
             <section class="block-body-content contacts-block-body-content">
               <h2 class="content-title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+
               <a class="map" href="https://www.google.ru/maps/">
                 <img src="img/map.png" width="300" height="158" alt="Карта проезда">
               </a>
+              <!--Можно сделать интерактивную карту, согласно доп. требованиям ТЗ. Правильно ли я разметила?
+              <button class="map index-map-small" type="button">
+                <img src="img/map-small.png" width="300" height="158" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+              </button>
+            -->
+
               <div class="modal button red">Заблудились? Напишите нам!</div>
 
-              <div class="contacts-action">
-                <p>Ваше имя:</p>
-                <p>Ваш e-mail:</p>
-                <p>Текст письма</p>
-                <p>Отправить</p>
-                <span class="modal-close">x</span>
-              </div>
+              <form class="block contacts-action-block" action="#" method="post">
+
+                <button class="modal-close contacts-action-close" type="button" aria-label="Закрыть форму">x</button>
+
+                  <div class="block-body contacts-action-block-body">
+
+                    <label class="contacts-action-title" for="contacts-action-name">Ваше имя:</label>
+                    <input class="contacts-action-name" id="contacts-action-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+
+                    <label class="contacts-action-title" for="contacts-action-email">Ваш e-mail:</label>
+                    <input class="contacts-action-email" id="contacts-action-email" type="email" name="email" placeholder="Для отправки ответа">
+
+
+                    <label class="contacts-action-title" for="contacts-action-text">Текст письма</label>
+                    <input class="contacts-action-text" id="contacts-action-text" type="text" name="text" placeholder="В свободной форме">
+                    </label>
+
+                  </div>
+
+                  <div class="block-body contacts-action-submit-block-body background-light-secondary-warning">
+
+                    <input class="button red" type="submit" value="Отправить">
+
+                  </div>
+
+                </div>
+              </form>
 
             </section>
 
@@ -393,9 +420,9 @@
           <p class="main-footer-copyright">2010-2017 Компания «Техномарт»</p>
           <p class="main-footer-copyright">Все права защищены</p>
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="visually-hidden social-icon social-icon-vk" href="#" aria-label="Вконтакте"></a></li><!--Как лучше, через aria-label иди через visually-hidden -->
+            <li><a class="visually-hidden social-icon social-icon-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li><!--Как лучше, через aria-label иди через visually-hidden -->
+            <li><a class="visually-hidden social-icon social-icon-instagram" href="#">Инстаграм</a></li><!--Как лучше, через aria-label иди через visually-hidden -->
           </ul>
           <p class="main-footer-mail">
             Обратная связь:
@@ -409,5 +436,16 @@
       </div>
 
     </footer>
+
+    <!-- Модальное окно-карта. Правильно ли размечено?
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <button class="modal-close map-close" type="button" aria-label="Закрыть карту">x</button>
+        <p>
+          <img src="img/map-big.png" width="940" height="446" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </p>
+      </section>
+    -->
+
   </body>
 </html>
