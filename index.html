@@ -16,7 +16,7 @@
             Техномарт
             <img src="img/logo-header.png" width="368" height="153" alt="Логотип магазина «Техномарт»">
           </a>
-          <form class="main-header-search-form" action="https://technomart.ru" method="get"><!--post или get? В лекции сказали, что post-->
+          <form class="main-header-search-form" action="https://technomart.ru" method="get">
               <input class="items-font" type="text" name="search" placeholder="Поиск">
           </form>
           <a class="button button-theme-transparent-black" href="#">Закладки</a>
@@ -45,7 +45,7 @@
 
         </div>
 
-          <nav class="block-body navigation-block-body background-secondary"><!--Правильно ли, что здесь не надо добавлять описание, читалка поймет, что nav - это навигация и так и прочитает?-->
+          <nav class="block-body navigation-block-body background-secondary">
             <ul class="main-menu-navigation-list">
               <li>
                 <a>Главная</a>
@@ -314,13 +314,8 @@
               <p>Вы можете забрать товар сами, заехав в наш офис:</p>
 
               <a class="map" href="https://www.google.ru/maps/">
-                <img src="img/map.png" width="300" height="158" alt="Карта проезда">
+                <img src="img/map.png" width="300" height="158" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
               </a>
-              <!--Можно сделать интерактивную карту, согласно доп. требованиям ТЗ. Правильно ли я разметила?
-              <button class="map index-map-small" type="button">
-                <img src="img/map-small.png" width="300" height="158" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-              </button>
-            -->
 
               <div class="modal button red">Заблудились? Напишите нам!</div>
 
@@ -339,7 +334,6 @@
 
                     <label class="contacts-action-title" for="contacts-action-text">Текст письма</label>
                     <input class="contacts-action-text" id="contacts-action-text" type="text" name="text" placeholder="В свободной форме">
-                    </label>
 
                   </div>
 
@@ -349,13 +343,11 @@
 
                   </div>
 
-                </div>
-              </form>
+                </form>
 
-            </section>
-
+              </section>
+            </div>
           </div>
-        </div>
 
       </main>
 
@@ -415,14 +407,14 @@
           </div>
         </div>
 
-      <div class="block copiright-block background-dark">
-        <div class="block-body-content copiright-block-body-content">
+      <div class="block copyright-block background-dark">
+        <div class="block-body-content copyright-block-body-content">
           <p class="main-footer-copyright">2010-2017 Компания «Техномарт»</p>
           <p class="main-footer-copyright">Все права защищены</p>
           <ul>
-            <li><a class="visually-hidden social-icon social-icon-vk" href="#" aria-label="Вконтакте"></a></li><!--Как лучше, через aria-label иди через visually-hidden -->
-            <li><a class="visually-hidden social-icon social-icon-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li><!--Как лучше, через aria-label иди через visually-hidden -->
-            <li><a class="visually-hidden social-icon social-icon-instagram" href="#">Инстаграм</a></li><!--Как лучше, через aria-label иди через visually-hidden -->
+            <li><a class="visually-hidden social-icon social-icon-vk" href="#">Вконтакте</a></li>
+            <li><a class="visually-hidden social-icon social-icon-fb" href="#">Фейсбук</a></li>
+            <li><a class="visually-hidden social-icon social-icon-instagram" href="#">Инстаграм</a></li>
           </ul>
           <p class="main-footer-mail">
             Обратная связь:
@@ -436,16 +428,5 @@
       </div>
 
     </footer>
-
-    <!-- Модальное окно-карта. Правильно ли размечено?
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <button class="modal-close map-close" type="button" aria-label="Закрыть карту">x</button>
-        <p>
-          <img src="img/map-big.png" width="940" height="446" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </p>
-      </section>
-    -->
-
   </body>
 </html>
