@@ -36,7 +36,6 @@ a {
 .company-logo {
   font-size: 24px;
   font-height: 24px;
-  font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -76,14 +75,12 @@ a {
   font-family: "Cuprum Italic", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Italic? */
   font-size: 16px;
   font-height: 23px;
-  font-weight: 400;
   color: #ee3643;
 }
 
 .main-header-telephone {
   font-size: 21px;
   font-height: 21px;
-  font-weight: 400;
   color: #ee3643;
 
   background-image: url(../img/icon-phone.svg);
@@ -94,14 +91,12 @@ a {
 .main-header-adress {
   font-size: 14px;
   font-height: 24px;
-  font-weight: 400;
   color: #32425c;
 }
 
 .main-header-buttons-list {
   font-size: 21px;
   font-height: 21px;
-  font-weight: 400;
 }
 
 .header-login {
@@ -115,6 +110,21 @@ a {
 }
 
 /*main*/
+
+.promo-title {
+  font-family: "Cuprum Bold", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Bold? */
+  font-size: 24px;
+  font-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.promo-button {
+  font-size: 14px;
+  font-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
 .background-warning {
   background-color: #ffbf47;
@@ -168,6 +178,32 @@ a {
   background-repeat: no-repeat;
 }
 
+.slider-title {
+  font-family: "Cuprum Bold", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Bold? */
+  font-size: 36px;
+  font-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider-subtitle {
+  font-size: 18px;
+  font-height: 24px;
+  color: #ffffff;
+}
+
+.red {
+  font-size: 14px;
+  font-height: 18px;
+  color: #ffffff
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+
+  border-radius: 3px; /*Подобрать точное значение*/
+}
+
 .slider-item-drills {
   background-image: url(../img/slider-drills.png);
   background-position: left center;
@@ -192,12 +228,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.catalog-item-new-price {
-  background-image: url(../img/red-button.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 .new {
   background-image: url(../img/new-products.svg);
   background-position: right top;
@@ -208,8 +238,97 @@ a {
   background-color: #f9f5f0;
 }
 
+.content-title {
+  font-size: 30px;
+  font-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.catalog-button-buy {
+  background-image: url(../img/icon-cart.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #63a63e;
+  box-shadow: 0 3px 0 0;
+}
+
+.catalog-button-bookmarks {
+  background-color: #32425c;
+
+  outline: 3px solid #63a63e;
+}
+
+.pop-card-title {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-height: 20px;
+  font-weight: 400;
+}
+
+.catalog-item-old-price {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 17px;
+  font-height: 18px;
+  font-weight: 400;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.catalog-item-new-price {
+  background-image: url(../img/red-button.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .background-light-gray-blue {
   background-color: #f4f7f9;
+}
+
+.services-buttons {
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 21px;
+  font-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #32425c;
+  background-image: url(../img/services-shadow.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.services-current-button {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.services-delivery {
+  background-image: url(../img/services-delivery.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.services-guarantee {
+  background-image: url(../img/services-guarantee.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.services-credit {
+  background-image: url(../img/services-credit.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.contacts-action-close {
+    color: #ee3643;
+}
+
+.contacts-action-title {
+  font-size: 18px;
+  font-height: 18px;
 }
 
 .background-light-danger {
@@ -220,6 +339,30 @@ a {
   background-color: #f4f4f4;
 }
 
-
-
 /*footer*/
+.main-footer-logo {
+  font-size: 30px;
+  font-height: 30px;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  font-height: 24px;
+  color: #ffffff;
+}
+
+.main-footer-navigation-item {
+  font-size: 18px;
+  font-height: 24px;
+  color: #ffffff;
+}
+
+.color-yellow {
+  color: #ffd180;
+}
+
+.main-footer-copyright {
+  font-size: 16px;
+  font-height: 18px;
+  color: #ffffff;
+}
