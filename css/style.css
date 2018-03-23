@@ -124,10 +124,12 @@ a {
   font-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+
+  background-color: #e5e5e5;
 }
 
 .background-warning {
-  background-color: #ffbf47;
+  background-color: rgba(229, 172, 64, 0,1);
 }
 
 .promo-materials {
@@ -205,13 +207,13 @@ a {
 }
 
 .slider-item-drills {
-  background-image: url(../img/slider-drills.png);
+  background-image: url(../img/slider-drills.jpg);
   background-position: left center;
   background-repeat: no-repeat;
 }
 
 .slider-items-perforators {
-  background-image: url(../img/slider-perforators.png);
+  background-image: url(../img/slider-perforators.jpg);
   background-position: left center;
   background-repeat: no-repeat;
 }
