@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -17,11 +21,11 @@
             <img src="img/logo-header.png" width="368" height="153" alt="Логотип магазина «Техномарт»">
           </a>
           <form class="main-header-search-form" action="https://technomart.ru" method="get">
-              <input class="items-font" type="text" name="search" placeholder="Поиск">
+              <input class="main-header-buttons" type="text" name="search" placeholder="Поиск:">
           </form>
-          <a class="button button-theme-transparent-black" href="#">Закладки</a>
-          <a class="button button-theme-transparent-black" href="#">Корзина</a>
-          <a class="button main-header-button-success" href="#">Оформить заказ</a>
+          <a class="button main-header-buttons main-header-bookmarks" href="#">Закладки:</a>
+          <a class="button main-header-buttons main-header-cart" href="#">Корзина:</a>
+          <a class="button main-header-buttons main-header-issue" href="#">Оформить заказ</a>
 
         </div>
 
@@ -35,7 +39,7 @@
               <p class="main-header-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
               <ul class="main-header-buttons-list">
-                <li class="button main-header-buttons-item">
+                <li class="button main-header-buttons-item header-login">
                   <a href="#" aria-label="Вход в личный кабинет">Вход</a>
                 </li>
                 <li class="button main-header-buttons-item">
@@ -320,6 +324,7 @@
               <div class="modal button red">Заблудились? Напишите нам!</div>
 
               <form class="block contacts-action-block" action="#" method="post">
+                <div class="block-body contacts-action-empty-block-body background-light-danger"></div>
 
                 <button class="modal-close contacts-action-close" type="button" aria-label="Закрыть форму">x</button>
 
@@ -337,7 +342,7 @@
 
                   </div>
 
-                  <div class="block-body contacts-action-submit-block-body background-light-secondary-warning">
+                  <div class="block-body contacts-action-submit-block-body background-light-secondary-danger">
 
                     <input class="button red" type="submit" value="Отправить">
 

@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum Regular", Arial, sans-serif;
+  font-size: 17px;
+  font-height: 17px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #fffdfd;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #ffffff;
+}
+
+/*header*/
+
+.background-light {
+  background-color: #f3f7f8;
+}
+
+.background-dark {
+  background-color: #293449;
+}
+
+.company-logo {
+  font-size: 24px;
+  font-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #ee3643;
+}
+
+ .main-header-buttons {
+   color: #ffffff;
+   font-height: 18px;
+ }
+
+.main-header-search-form {
+  background-image: url("img/icon-search.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.main-header-bookmarks {
+  background-image: url("img/icon-bookmark.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.main-header-cart {
+  background-image: url("img/icon-cart.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.main-header-issue {
+  background-color: #63a63e;
+}
+
+.main-header-text {
+  font-family: "Cuprum Italic", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Italic? */
+  font-size: 16px;
+  font-height: 23px;
+  font-weight: 400;
+  color: #ee3643;
+}
+
+.main-header-telephone {
+  font-size: 21px;
+  font-height: 21px;
+  font-weight: 400;
+  color: #ee3643;
+
+  background-image: url("img/icon-phone.svg"); /* правильно ли добавлена эта картинка с трубкой? */
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.main-header-adress {
+  font-size: 14px;
+  font-height: 24px;
+  font-weight: 400;
+  color: #32425c;
+}
+
+.main-header-buttons-list {
+  font-size: 21px;
+  font-height: 21px;
+  font-weight: 400;
+}
+
+.header-login {
+  background-image: url("img/icon-login.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.background-secondary {
+  background-color: #32425c;
+}
+
+/*main*/
+
+.background-warning {
+  background-color: #ffbf47;
+}
+
+.background-info {
+  background-color: #3bbce3;
+}
+
+.background-violet {
+  background-color: #dc91d8;
+}
+
+.background-aquamarine {
+  background-color: #8ed78f;
+}
+
+.background-beige {
+  background-color: #f9f5f0;
+}
+
+.background-light-gray-blue {
+  background-color: #f4f7f9;
+}
+
+.background-light-danger {
+  background-color: #ff5257;
+}
+
+.background-light-secondary-danger {
+  background-color: #f4f4f4;
+}
+
+
+
+/*footer*/
