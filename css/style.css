@@ -86,7 +86,7 @@ a {
   font-weight: 400;
   color: #ee3643;
 
-  background-image: url(../img/icon-phone.svg); /* правильно ли добавлена эта картинка с трубкой? */
+  background-image: url(../img/icon-phone.svg);
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -120,16 +120,88 @@ a {
   background-color: #ffbf47;
 }
 
+.promo-materials {
+  background-image: url(../img/icon-promo-materials.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.new-promo {
+  background-image: url(../img/new-promo.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
 .background-info {
   background-color: #3bbce3;
+}
+
+.promo-tools {
+  background-image: url(../img/icon-promo-tools.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .background-violet {
   background-color: #dc91d8;
 }
 
+.promo-equipment {
+  background-image: url(../img/icon-promo-equipment.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
 .background-aquamarine {
   background-color: #8ed78f;
+}
+
+.promo-sale {
+  background-image: url(../img/icon-promo-sale.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.promo-delivery {
+  background-image: url(../img/icon-promo-delivery.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.slider-item-drills {
+  background-image: url(../img/slider-drills.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.slider-items-perforators {
+  background-image: url(../img/slider-perforators.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.slider-pointer-left {
+  background-image: url(../img/icon-left.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.slider-pointer-right {
+  background-image: url(../img/icon-right.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.catalog-item-new-price {
+  background-image: url(../img/red-button.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.new {
+  background-image: url(../img/new-products.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .background-beige {
