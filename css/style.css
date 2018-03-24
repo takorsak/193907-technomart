@@ -4,7 +4,7 @@ body {
 
   font-family: "Cuprum Regular", Arial, sans-serif;
   font-size: 17px;
-  font-height: 17px;
+  line-height: 17px;
   font-weight: 400;
   color: #000000;
 
@@ -14,13 +14,21 @@ body {
 }
 
 a {
-  color: inherit;
+  color: inherit;/* Можно ли здесь применить глобальный стиль или сделать двойные селекторы в каждом случае?*/
 
   text-decoration: none;
 }
 
+li {
+  list-style: none; /* Можно ли здесь применить глобальный стиль или сделать двойные селекторы в каждом случае?*/
+}
+
 .button {
   background-color: #ffffff;
+
+  border-radius: 3px; /*Подобрать точное значение*/
+
+  text-align: center;
 }
 
 /*header*/
@@ -35,7 +43,7 @@ a {
 
 .company-logo {
   font-size: 24px;
-  font-height: 24px;
+  line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -45,7 +53,7 @@ a {
 
  .main-header-buttons {
    color: #ffffff;
-   font-height: 18px;
+   line-height: 18px;
    background-color: #293449;
  }
 
@@ -62,25 +70,52 @@ a {
 }
 
 .main-header-cart {
-  background-image: url(../img/icon-cart.svg);
+  background-image: url(../img/icon-cart.svg);/*В активном состоянии иконки непрозрачные -- белые. Чтобы они были прозрачные как в неактивном состоянии, как сделать? А у формы поиска иконка вообще красного цвета. У кнопки "Войти" меняет цвет в разных состояниях*/
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+.main-header-search-form:focus,
+.main-header-bookmarks:focus,
+.main-header-bookmarks:hover,
+.main-header-cart:focus,
+.main-header-cart:hover {
+  background-color: #212a3a;
+}
+
+.main-header-bookmarks:hover,
+.main-header-cart:hover {
+  color: rgba(255, 255, 255, 0,60);
+}
+
+.main-header-search-for:hover {
+  background-color: #ffffff;
 }
 
 .main-header-issue {
   background-color: #63a63e;
 }
 
+.main-header-issue:focus {
+  background-color: #5fbb2d;
+}
+
+.main-header-issue:hover {
+  color: rgba(255, 255, 255, 0,51);
+
+  background-color: #518534;
+}
+
 .main-header-text {
   font-family: "Cuprum Italic", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Italic? */
   font-size: 16px;
-  font-height: 23px;
+  line-height: 23px;
   color: #ee3643;
 }
 
 .main-header-telephone {
   font-size: 21px;
-  font-height: 21px;
+  line-height: 21px;
   color: #ee3643;
 
   background-image: url(../img/icon-phone.svg);
@@ -90,13 +125,21 @@ a {
 
 .main-header-adress {
   font-size: 14px;
-  font-height: 24px;
+  line-height: 24px;
   color: #32425c;
 }
 
 .main-header-buttons-list {
   font-size: 21px;
-  font-height: 21px;
+  line-height: 21px;
+}
+
+.main-header-buttons-list:focus {
+  color: #ee3643;
+}
+
+.main-header-buttons-list:hover {
+  color: rgba(0, 0, 0, 0,3);
 }
 
 .header-login {
@@ -109,27 +152,48 @@ a {
   background-color: #32425c;
 }
 
+.navigation-block-body {
+  box-shadow: 0 5px 0 0;
+}
+
+.navigation-block-body:focus,
+.navigation-block-body:hover {
+  background-color: #293449;
+}
+
+.navigation-block-body:hover {
+  color: rgba(255, 255, 255, 0,5);
+}
+
 /*main*/
 
 .promo-title {
   font-family: "Cuprum Bold", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Bold? */
   font-size: 24px;
-  font-height: 30px;
+  line-height: 30px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .promo-button {
   font-size: 14px;
-  font-height: 18px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
 
-  background-color: #e5e5e5;
+  background-color: rgba(229, 172, 64, 0,1);
+}
+
+.promo-button:focus {
+  background-color: rgba(204, 204, 204, 0,1);
+}
+
+.promo-button:hover {
+  background-color: rgba(178, 178, 178, 0,1);
 }
 
 .background-warning {
-  background-color: rgba(229, 172, 64, 0,1);
+  background-color: #f6b22d;
 }
 
 .promo-materials {
@@ -183,7 +247,7 @@ a {
 .slider-title {
   font-family: "Cuprum Bold", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Bold? */
   font-size: 36px;
-  font-height: 36px;
+  line-height: 36px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
@@ -191,28 +255,36 @@ a {
 
 .slider-subtitle {
   font-size: 18px;
-  font-height: 24px;
+  line-height: 24px;
   color: #ffffff;
 }
 
 .red {
   font-size: 14px;
-  font-height: 18px;
-  color: #ffffff
+  line-height: 18px;
+  color: #ffffff;
   text-transform: uppercase;
 
   background-color: #ee3643;
+}
 
-  border-radius: 3px; /*Подобрать точное значение*/
+.red:focus {
+  background-color: #ca2c37;
+}
+
+.red:hover {
+  background-color: #ba2732;
 }
 
 .slider-item-drills {
+  background-color: #201512;
   background-image: url(../img/slider-drills.jpg);
   background-position: left center;
   background-repeat: no-repeat;
 }
 
 .slider-items-perforators {
+  background-color: #756453;
   background-image: url(../img/slider-perforators.jpg);
   background-position: left center;
   background-repeat: no-repeat;
@@ -242,17 +314,26 @@ a {
 
 .content-title {
   font-size: 30px;
-  font-height: 30px;
+  line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
 }
 
 .catalog-button-buy {
-  background-image: url(../img/icon-cart.svg);
+  background-image: url(../img/icon-cart.svg);/*картинка здесь тоже полупрозрачная*/
   background-position: left center;
   background-repeat: no-repeat;
   background-color: #63a63e;
-  box-shadow: 0 3px 0 0;
+  box-shadow: 0 3px 0 0; /*это свойство наследуется или .catalog-button-buy не родитель .catalog-button-buy:focus?*/
+}
+
+.catalog-button-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.catalog-button-buy:hover {
+  background-color: #518534;
+  box-shadow: none;
 }
 
 .catalog-button-bookmarks {
@@ -261,17 +342,27 @@ a {
   outline: 3px solid #63a63e;
 }
 
+.catalog-button-bookmarks:focus {
+  outline: 3px solid #32425c;
+}
+
+.catalog-button-bookmarks:hover {
+  color: rgba(50, 66, 92, 0,3);
+
+  outline: 3px solid #c1c6ce;
+}
+
 .pop-card-title {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 18px;
-  font-height: 20px;
+  line-height: 20px;
   font-weight: 400;
 }
 
 .catalog-item-old-price {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 17px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: 400;
   color: #a9a9a9;
   text-decoration: line-through;
@@ -283,6 +374,15 @@ a {
   background-repeat: no-repeat;
 }
 
+.pop-brand-item:focus {
+  /*Как вычислить характеристики тени*/
+}
+
+.pop-brand-item:hover {
+  /*Как вычислить характеристики тени и сделать лого прозрачным?*/
+
+}
+
 .background-light-gray-blue {
   background-color: #f4f7f9;
 }
@@ -290,7 +390,7 @@ a {
 .services-buttons {
   font-family: "Cuprum Bold", Arial, sans-serif;
   font-size: 21px;
-  font-height: 30px;
+  line-height: 30px;
   font-weight: 700;
   color: #ffffff;
 
@@ -298,6 +398,10 @@ a {
   background-image: url(../img/services-shadow.png);
   background-position: center right;
   background-repeat: no-repeat;
+}
+
+.services-buttons:focus {
+  background-color: #293449;
 }
 
 .services-current-button {
@@ -330,7 +434,7 @@ a {
 
 .contacts-action-title {
   font-size: 18px;
-  font-height: 18px;
+  line-height: 18px;
 }
 
 .background-light-danger {
@@ -341,30 +445,167 @@ a {
   background-color: #f4f4f4;
 }
 
+.map {
+  background-color: #f4f2ec;
+}
+
 /*footer*/
 .main-footer-logo {
   font-size: 30px;
-  font-height: 30px;
+  line-height: 30px;
 }
 
 .footer-contacts {
   font-size: 18px;
-  font-height: 24px;
+  line-height: 24px;
   color: #ffffff;
 }
 
 .main-footer-navigation-item {
   font-size: 18px;
-  font-height: 24px;
+  line-height: 24px;
   color: #ffffff;
+}
+
+.main-footer-navigation-item:focus {
+  text-decoration:underline;
+}
+
+.main-footer-navigation-item:hover {
+  color: rgba(241, 245, 247, 0,5);
 }
 
 .color-yellow {
   color: #ffd180;
 }
 
+.color-yellow .main-footer-navigation-item:hover {/*правильно ли здесь записано свойство?*/
+  color: rgba(255, 209, 128, 0,5);
+}
+
 .main-footer-copyright {
   font-size: 16px;
-  font-height: 18px;
+  line-height: 18px;
   color: #ffffff;
+}
+
+/* как сделать иконки соцсетей другого цвета?*/
+
+.color-yellow .main-footer-copyright:hover {/*правильно ли здесь записано свойство?*/
+  color: #c73644;
+}
+
+.social-icon {
+  text-align: center;
+}
+
+/*стили для каталога*/
+
+.products-in-cart {
+  background-color: #ee3643;
+}
+
+.products-in-cart + .main-header-issue {/*правильно ли здесь записано свойство?*/
+  background-color: #63a63e;
+}
+
+.login-block-body-content-container {
+  font-size: 21px;
+  line-height: 21px;
+
+  text-align: center;
+}
+
+.login-block-body-content-container:hover {
+  color: rgba(0, 0, 0, 0,3);
+}
+
+.icon-user {
+  background-image: url(../img/icon-user.svg);
+  background-position: center center;
+  background-repeat: no-repeat; /*при наведении и клике иконки меняют цвет, как сделать?*/
+}
+
+.icon-logout {
+  background-image: url(../img/icon-logout.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+} /*при наведении и клике иконки меняют цвет, как сделать?*/
+
+.login-options-list {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-decoration: underline;
+}
+
+.login-options-list:focus {
+  color: #e9292a;
+}
+
+.login-options-list:hover {
+  color: rgba(50, 66, 92, 0,3);
+}
+
+.breadcrumbs {
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+
+  text-align: left;
+}
+
+.block-body-content-container {
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.filter-title {
+  font-size: 13px;
+  line-height: 18px;
+
+  text-align: left;
+}
+
+.filter-fieldset-title {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+
+  text-align: left;
+}
+
+.filter-price-value-min {
+  font-size: 17px;
+  line-height: 18px;
+
+  text-align: center;
+}
+
+.filter-item {
+  font-size: 15px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  text-align: left;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting-way-item {
+  /*дописать стили*/
 }
