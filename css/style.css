@@ -255,11 +255,16 @@ a .main-header-search-form:active {
 }
 
 /*main*/
-.promo a {
+a .promo-button {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+
+  background-color: #000000;
+
+  opacity: 0.1;
+
 }
 
 .promo-title {
