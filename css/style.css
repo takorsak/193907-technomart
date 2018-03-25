@@ -734,6 +734,10 @@ a .main-header-search-form:active {
 
 /*стили для каталога*/
 
+.cart-issue a {
+  color: #ffffff;
+}
+
 .products-in-cart {
   background-color: #ee3643;
 }
@@ -742,7 +746,7 @@ a .main-header-search-form:active {
   background-color: #63a63e;
 }
 
-.login-block-body-content-container {
+.login-block-body-content-container a {
   font-size: 21px;
   line-height: 21px;
 
@@ -776,26 +780,28 @@ a .main-header-search-form:active {
   fill: #32425c;
 }
 
-.login-options-list {
+.login-options-list a {
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
 
   text-decoration: underline;
   text-decoration-color: #32425c;
+
+  list-style: none;
 }
 
-.login-options-list:hover {
+.login-options-list a:hover {
   color: #e9292a;
   text-decoration-color: #e9292a;
 }
 
-.login-options-list:active {
+.login-options-list a:active {
   color: rgba(50, 66, 92, 0.3);
   text-decoration-color: rgba(50, 66, 92, 0.3);
 }
 
-.breadcrumbs {
+.breadcrumbs a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -857,6 +863,10 @@ h1 {
 .filter-button, {
   font-size: 13px;
   line-height: 18px;
+}
+
+.filter-list {
+  list-style: none;
 }
 
 .filter-input {
@@ -923,14 +933,15 @@ h1 {
   fill: #e9e9e9;
 }
 
-/*Далее -- с учетом замечаний наставника*/
-
-.sorting-way-list {
+.sorting-way-list a {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.sorting-way-list {
 
   list-style: none;
 
@@ -955,19 +966,23 @@ h1 {
   text-decoration: none;
 }
 
-.sorting-order-item {
+.sorting-order-list {
+  list-style: none;
+}
+
+.sorting-order-item a {
   color: rgba(0 , 0, 0, 0.3);
 }
 
-.sorting-order-item:hover {
+.sorting-order-item a:hover {
   color: #000000;
 }
 
-.sorting-order-item:active {
+.sorting-order-item a:active {
   color: #ee3643;
 }
 
-.sorting-way-current {
+.sorting-way-current a {
   color: #ee3643;
 }
 
@@ -1003,7 +1018,7 @@ h1 {
   list-style: none;
 }
 
-.pagination-item {
+.pagination-item a {
   font-size: 13px;
   line-height: 18px;
 
@@ -1013,23 +1028,23 @@ h1 {
   border-radius: 3px;
 }
 
-.pagination-item:hover {
+.pagination-item a:hover {
   outline: 1px solid #bdc6ca;
 }
 
-.pagination-item:active {
+.pagination-item a:active {
   outline: 1px solid #ee3643;
 }
 
-.pagination-item-current {
+.pagination-item-current a {
   color: #ffffff;
 
   background-color: #ee3643;
 }
 
-.pagination-item-current:hover,
-.pagination-item-current:active,
-.pagination-item-current:active {
+.pagination-item-current a:hover,
+.pagination-item-current a:active,
+.pagination-item-current a:active {
   color: #ffffff;
 
   background-color: #ee3643;
