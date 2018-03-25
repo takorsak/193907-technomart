@@ -255,17 +255,6 @@ a .main-header-search-form:active {
 }
 
 /*main*/
-a .promo-button {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background-color: #000000;
-
-  opacity: 0.1;
-
-}
 
 .promo-title {
   font-family: "Cuprum", Arial, sans-serif;
@@ -276,21 +265,22 @@ a .promo-button {
 }
 
 .promo-button {
-  background-color: #000000;
-
-  opacity: 0.1;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .promo-button:hover {
-  background-color: #000000;
-
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo-button:active {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
-  opacity: 0.3;
+a .promo-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .background-warning {
