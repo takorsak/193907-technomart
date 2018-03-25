@@ -677,6 +677,10 @@ a .main-header-search-form:active {
   color: #c73644;
 }
 
+.copyright-block a {
+  color: #ffd180;
+}
+
 .social-icon-list {
   list-style: none;
 }
@@ -726,10 +730,6 @@ a .main-header-search-form:active {
   background-image: url(../img/focus-hover-insta.png);
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-.main-footer-copyright + a {
-  color: #ffd180;
 }
 
 /*стили для каталога*/
