@@ -264,15 +264,19 @@ a .main-header-search-form:active {
   color: #ffffff;
 }
 
-a .promo-button {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-
+.promo-button {
   background-color: #000000;
 
   opacity: 0.1;
+}
+
+a .promo-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .promo-button:hover {
