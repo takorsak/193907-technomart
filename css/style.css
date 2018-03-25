@@ -60,57 +60,50 @@ a {
   text-transform: uppercase;
 
   background-color: #ee3643;
-  box-shadow: 0 5px 0 0;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
  .main-header-buttons {
-   color: #ffffff;
    line-height: 18px;
+   color: #ffffff;
+
    background-color: #293449;
  }
 
 .main-header-search-form {
   background-image: url(../img/icon-search.svg);
+  fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
-
-  opacity: 0.3;
 }
 
 .main-header-bookmarks {
   background-image: url(../img/icon-bookmark.svg);
+  fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
-
-  opacity: 0.3;
 }
 
 .main-header-cart {
   background-image: url(../img/icon-cart.svg);
+  fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
-
-  opacity: 0.3;
 }
 
 .main-header-search-form:hover,
 .main-header-bookmarks:hover,
 .main-header-cart:hover {
   background-color: #212a3a;
-
-  opacity: none;
+  fill: #ffffff;
 }
 
 .main-header-cart:active,
 .main-header-bookmarks:active {
   color: rgba(225, 225, 225, 0.6);
+
   background-color: #212a3a;
-
-  opacity: 0.5;
-}
-
-.main-header-search-form:active {
-  opacity: 0.5;
+  fill: #8b8e94;
 }
 
 .main-header-search-form:active {
