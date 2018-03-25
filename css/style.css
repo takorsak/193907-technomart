@@ -276,7 +276,7 @@ a .main-header-search-form:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-a .promo-button {
+.promo a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
