@@ -429,9 +429,11 @@ a .main-header-search-form:active {
   text-transform: uppercase;
 }
 
-a .catalog-button-buy {
+.catalog-item-action a {
   color: #ffffff;
+}
 
+.catalog-button-buy {
   background-image: url(../img/icon-cart.svg);
   fill: #92c178;
   background-position: left center;
@@ -449,13 +451,17 @@ a .catalog-button-buy {
   box-shadow: 0 3px 0 0 #518534;
 }
 
-a .catalog-button-bookmarks {
+.catalog-item-action + a {
+  color: #32425c;
+}
+
+.catalog-button-buy + a {
   color: #32425c;
 
   outline: 3px solid #63a63e;
   border-radius: 2px;
 }
-
+  
 .catalog-button-bookmarks:hover {
   outline: 3px solid #32425c;
 }
