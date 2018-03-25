@@ -255,6 +255,12 @@ a .main-header-search-form:active {
 }
 
 /*main*/
+.promo a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
 .promo-title {
   font-family: "Cuprum", Arial, sans-serif;
@@ -268,15 +274,6 @@ a .main-header-search-form:active {
   background-color: #000000;
 
   opacity: 0.1;
-}
-
-a .promo-button {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-style: normal;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
 .promo-button:hover {
