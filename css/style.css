@@ -63,7 +63,22 @@ a {
   box-shadow: 0 5px 0 0 #b52933;
 }
 
- .main-header-buttons {
+.main-header-search-form {
+  background-image: url(../img/icon-search.svg);
+  fill: #6a7180;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.main-header-search-form:hover {
+  fill: #ffffff;
+}
+
+.main-header-search-form:active {
+  fill: #ee3643;
+}
+
+.main-header-buttons {
    line-height: 18px;
    color: #ffffff;
 
@@ -71,17 +86,17 @@ a {
  }
 
 .main-header-search {
-  background-image: url(../img/icon-search.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
+  border: 0;
+  outline: none;
 }
 
 .main-header-search:hover {
+  background-color: #212a3a;
   fill: #ffffff;
 }
 
 .main-header-search:active {
+  background-color: #ffffff;
   fill: #ee3643;
 }
 
