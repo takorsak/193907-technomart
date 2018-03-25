@@ -615,6 +615,15 @@ a .main-header-search-form:active {
   background-color: #f4f2ec;
 }
 
+.contacts-action-block-body {
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contacts-action-submit {
+  border: 0;
+  outline: none;
+}
+
 /*footer*/
 .main-footer-logo {
   font-size: 30px;
@@ -627,29 +636,34 @@ a .main-header-search-form:active {
   color: #ffffff;
 }
 
-.main-footer-navigation-list {
-  list-style: none;
-}
-
-.main-footer-navigation-item {
+.footer-contacts a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
 
-.main-footer-navigation-item:hover {
+.main-footer-navigation-list,
+.main-footer-navigation-list a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  list-style: none;
+}
+
+.main-footer-navigation-item a:hover {
   text-decoration:underline;
 }
 
-.main-footer-navigation-item:active {
+.main-footer-navigation-item a:active {
   color: rgba(241, 245, 247, 0.5);
 }
 
-.color-yellow {
+.color-yellow a {
   color: #ffd180;
 }
 
-.color-yellow .main-footer-navigation-item:active {
+.color-yellow a:active {
   color: rgba(255, 209, 128, 0.5);
 }
 
