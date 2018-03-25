@@ -70,11 +70,49 @@ a {
    background-color: #293449;
  }
 
-.main-header-search-form {
+.main-header-search {
   background-image: url(../img/icon-search.svg);
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+.main-header-search:hover {
+  fill: #ffffff;
+}
+
+.main-header-search:active {
+  fill: #ee3643;
+}
+
+.main-header-search::-moz-placeholder {
+  color: #ffffff;
+
+  border: 0px;
+}
+
+.main-header-search::-webkit-input-placeholder {
+  color: #ffffff;
+
+  border: 0px;
+}
+
+.main-header-search:-ms-input-placeholder {
+  color: #ffffff;
+
+  border: 0px;
+}
+
+.main-header-search::-ms-input-placeholder {
+  color: #ffffff;
+
+  border: 0px;
+}
+
+.main-header-search::placeholder {
+  color: #ffffff;
+
+  border: 0px;
 }
 
 .main-header-bookmarks {
