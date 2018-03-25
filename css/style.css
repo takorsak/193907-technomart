@@ -452,24 +452,32 @@ a .main-header-search-form:active {
 }
 
 .catalog-item-action + a {
+  font-size: 14px;
+  line-height: 18px;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .catalog-button-buy + a {
+  font-size: 14px;
+  line-height: 18px;
   color: #32425c;
+  text-transform: uppercase;
+}
 
-  outline: 3px solid #63a63e;
+.catalog-button-bookmarks {
+  border: 3px solid #63a63e;
   border-radius: 2px;
 }
-  
+
 .catalog-button-bookmarks:hover {
-  outline: 3px solid #32425c;
+  border: 3px solid #32425c;
 }
 
 .catalog-button-bookmarks:active {
   color: rgba(50, 66, 92, 0.3);
 
-  outline: 3px solid #c1c6ce;
+  border: 3px solid #c1c6ce;
 }
 
 .pop-cards-list {
