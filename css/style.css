@@ -429,33 +429,31 @@ a .main-header-search-form:active {
   text-transform: uppercase;
 }
 
-.catalog-button-buy {
+a .catalog-button-buy {
+  color: #ffffff;
+
   background-image: url(../img/icon-cart.svg);
+  fill: #92c178;
   background-position: left center;
   background-repeat: no-repeat;
   background-color: #63a63e;
-  box-shadow: 0 3px 0 0;
-
-  opacity: 0.3;
+  box-shadow: 0 3px 0 0 #367315;
 }
 
 .catalog-button-buy:hover {
   background-color: #5fbb2d;
-
-  opacity: none;
 }
 
 .catalog-button-buy:active {
   background-color: #518534;
-  box-shadow: none;
-
-  opacity: none;
+  box-shadow: 0 3px 0 0 #518534;
 }
 
-.catalog-button-bookmarks {
-  background-color: #32425c;
+a .catalog-button-bookmarks {
+  color: #32425c;
 
   outline: 3px solid #63a63e;
+  border-radius: 2px;
 }
 
 .catalog-button-bookmarks:hover {
