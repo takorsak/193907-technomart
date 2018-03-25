@@ -21,7 +21,7 @@
           <a class="button button-theme-transparent-black" href="#">Закладки</a>
 <!--Стиль у корзины и кнопки "оформить заказ" изменен по сравнению с главной.
           <a class="button main-header-buttons main-header-cart products-in-cart" href="#">Корзина: 10</a>
-          <a class="button main-header-buttons main-header-issue" href="#">Оформить заказ</a>
+          <a class="button main-header-buttons main-header-issue main-header-issue-active" href="#">Оформить заказ</a>
 -->
         </div>
 
@@ -35,21 +35,17 @@
                 <p class="main-header-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </div>
 
-<!--Стили отличаются от главной-->
+<!--Стили отличаются от главной
               <div class="block-body-content-container login-block-body-content-container">
-                  <div class="icon-user"><!--Правильно ли здесь вставлены картинки? -->
-                    <a href="#"></a>
-                  </div>
-                  <p>Равшан Джамшутович</p>
-                  <div class="icon-logout"><!--Правильно ли здесь вставлены картинки? -->
-                    <a href="#"></a>
-                  </div>
+                  <a class="icon-user" href="#" aria-label="Профиль пользователя"></a>
+                  <a class="user-name" href="#" aria-label="Личный кабинет пользователя">Равшан Джамшутович</p>
+                  <a class="icon-logout" href="#" aria-label="Выход из личного кабинета"></a>
               </div>
               <ul class="login-options-list">
-                <li><a href="#">Мои заказы</a></li><!-- Как сверстать точку между ними?-->
+                <li><a href="#">Мои заказы</a></li>
                 <li><a href="#">Личный кабинет</a></li>
               </ul>
-<!---->
+-->
           </div>
 
             <nav class="block-body navigation-block-body background-secondary">
@@ -113,8 +109,8 @@
                         <!--Ползунок будет сделан позже-->
                       </div>
                       <div class="filter-block filter-price-value-block background-beige">
-                        <output class="filter-price-value-min" name="priceoutput" aria-label="Минимальное значение цены"></output>
-                        <output class="filter-price-value-max" name="priceoutput" aria-label="Максимальное значение цены"></output>
+                        <output class="filter-price-value-min" name="priceoutput" aria-label="Минимальное значение цены">0</output>
+                        <output class="filter-price-value-max" name="priceoutput" aria-label="Максимальное значение цены">30000</output>
                       </div>
 
                     </fieldset>
@@ -124,7 +120,7 @@
 
                       <ul class="filter-list">
                         <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox" id="filter-Bosch" type="checkbox" name="Bosch" checked>
+                          <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" id="filter-Bosch" type="checkbox" name="Bosch" checked>
                           <label for="filter-Bosch">Bosch</label>
                         </li>
                         <li class="filter-item">
@@ -132,7 +128,7 @@
                           <label for="filter-Interskol">Интерскол</label>
                         </li>
                         <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox" id="filter-Makita" type="checkbox" name="Makita" checked>
+                          <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" id="filter-Makita" type="checkbox" name="Makita" checked>
                           <label for="filter-Makita">Makita</label>
                         </li>
                         <li class="filter-item">
@@ -152,7 +148,7 @@
 
                       <ul class="filter-list">
                         <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-radio" id="filter-rechargeable" type="radio" name="product-group" value="rechargeable" checked>
+                          <input class="visually-hidden filter-input filter-input-radio filter-input-radio-checked" id="filter-rechargeable" type="radio" name="product-group" value="rechargeable" checked>
                           <label for="filter-rechargeable">Аккумуляторные</label>
                         </li>
                         <li class="filter-item">
@@ -175,7 +171,7 @@
                       <div class="sorting-way">
                         <ul class="sorting-way-list" aria-label="Варианты сортировки">
                           <li class="sorting-way-item">
-                            <a class="sorting-way-price-title">По цене</a>
+                            <a class="sorting-way-price-title sorting-way-current">По цене</a>
                           </li>
                           <li class="sorting-way-item">
                             <a class="sorting-way-type-title">По типу</a>
@@ -186,10 +182,10 @@
                         </ul>
                         <ul class="sorting-order-list" aria-label="Порядок сортировки">
                           <li class="sorting-order-item">
-                            <a class="visually-hidden min-to-max-price" href="#" title="Сортировка от меньшего к большему"></a>
+                            <a class="visually-hidden min-to-max-price min-to-max-price-current" href="#" title="Сортировка от меньшего к большему"></a>
                           </li>
                           <li class="sorting-order-item">
-                            <a class="visually-hidden min-to-max-price" href="#" title="Сортировка от большего к меньшему"></a>
+                            <a class="visually-hidden max-to-min-price" href="#" title="Сортировка от большего к меньшему"></a>
                           </li>
                         </ul>
                      </div>
@@ -339,10 +335,10 @@
                     </div>
                   </section>
                 </div>
-                <div class="block text-block">
-                  <section class="block-body text-block-body">
+                <div class="block puncher-text-block">
+                  <section class="block-body puncher-text-block-body">
                     <h2 class="content-title">Пара слов о перфораторах</h2>
-                    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+                    <p class="narrative puncher-narrative">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
                   </section>
                 </div>
             </main>

@@ -14,21 +14,32 @@ body {
 }
 
 a {
-  color: inherit;/* Можно ли здесь применить глобальный стиль или сделать двойные селекторы в каждом случае?*/
-
   text-decoration: none;
-}
-
-li {
-  list-style: none; /* Можно ли здесь применить глобальный стиль или сделать двойные селекторы в каждом случае?*/
 }
 
 .button {
   background-color: #ffffff;
 
-  border-radius: 3px; /*Подобрать точное значение*/
+  border-radius: 3px;
 
   text-align: center;
+}
+
+.red {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.red:focus {
+  background-color: #ca2c37;
+}
+
+.red:hover {
+  background-color: #ba2732;
 }
 
 /*header*/
@@ -61,35 +72,49 @@ li {
   background-image: url(../img/icon-search.svg);
   background-position: left center;
   background-repeat: no-repeat;
+
+  opacity: 0.3;
 }
 
 .main-header-bookmarks {
   background-image: url(../img/icon-bookmark.svg);
   background-position: left center;
   background-repeat: no-repeat;
+
+  opacity: 0.3;
 }
 
 .main-header-cart {
-  background-image: url(../img/icon-cart.svg);/*В активном состоянии иконки непрозрачные -- белые. Чтобы они были прозрачные как в неактивном состоянии, как сделать? А у формы поиска иконка вообще красного цвета. У кнопки "Войти" меняет цвет в разных состояниях*/
+  background-image: url(../img/icon-cart.svg);
   background-position: left center;
   background-repeat: no-repeat;
+
+  opacity: 0.3;
 }
 
 .main-header-search-form:focus,
 .main-header-bookmarks:focus,
-.main-header-bookmarks:hover,
-.main-header-cart:focus,
-.main-header-cart:hover {
+.main-header-cart:focus {
   background-color: #212a3a;
+
+  opacity: none;
 }
 
-.main-header-bookmarks:hover,
-.main-header-cart:hover {
-  color: rgba(255, 255, 255, 0,60);
+.main-header-cart:hover,
+.main-header-bookmarks:hover {
+  color: rgba(225, 225, 225, 0.6);
+  background-color: #212a3a;
+
+  opacity: 0.5;
 }
 
-.main-header-search-for:hover {
+.main-header-search-form:hover {
+  opacity: 0.5;
+}
+
+.main-header-search-form:active {
   background-color: #ffffff;
+  fill: #ee3643;
 }
 
 .main-header-issue {
@@ -101,15 +126,17 @@ li {
 }
 
 .main-header-issue:hover {
-  color: rgba(255, 255, 255, 0,51);
+  color: rgba(255, 255, 255, 0.51);
 
   background-color: #518534;
 }
 
 .main-header-text {
-  font-family: "Cuprum Italic", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Italic? */
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: italic;
   font-size: 16px;
   line-height: 23px;
+  font-weight: 400;
   color: #ee3643;
 }
 
@@ -119,6 +146,7 @@ li {
   color: #ee3643;
 
   background-image: url(../img/icon-phone.svg);
+  fill: #b7bfc8;
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -132,6 +160,8 @@ li {
 .main-header-buttons-list {
   font-size: 21px;
   line-height: 21px;
+
+  list-style: none;
 }
 
 .main-header-buttons-list:focus {
@@ -139,13 +169,22 @@ li {
 }
 
 .main-header-buttons-list:hover {
-  color: rgba(0, 0, 0, 0,3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.header-login {
+.header-login,
+.header-login:hover
+ {
   background-image: url(../img/icon-login.svg);
+  fill: #293449;
   background-position: left center;
   background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
+
+.header-login:focus {
+  opacity: none;
 }
 
 .background-secondary {
@@ -162,13 +201,17 @@ li {
 }
 
 .navigation-block-body:hover {
-  color: rgba(255, 255, 255, 0,5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-menu-navigation-list {
+  list-style: none;
 }
 
 /*main*/
 
 .promo-title {
-  font-family: "Cuprum Bold", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Bold? */
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -181,15 +224,21 @@ li {
   color: #ffffff;
   text-transform: uppercase;
 
-  background-color: rgba(229, 172, 64, 0,1);
+  background-color: #000000;
+
+  opacity: 0.1;
 }
 
 .promo-button:focus {
-  background-color: rgba(204, 204, 204, 0,1);
+  background-color: #000000;
+
+  opacity: 0.2;
 }
 
-.promo-button:hover {
-  background-color: rgba(178, 178, 178, 0,1);
+.promo-button:focus {
+  background-color: #000000;
+
+  opacity: 0.3;
 }
 
 .background-warning {
@@ -203,7 +252,7 @@ li {
 }
 
 .new-promo {
-  background-image: url(../img/new-promo.svg);
+  background-image: url(../img/new-promo.png);
   background-position: right top;
   background-repeat: no-repeat;
 }
@@ -244,8 +293,12 @@ li {
   background-repeat: no-repeat;
 }
 
+.slider-item-list {
+  list-style: none;
+}
+
 .slider-title {
-  font-family: "Cuprum Bold", Arial, sans-serif; /* надо ли здесь поменять Arial на какой-нибудь Bold? */
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -257,23 +310,6 @@ li {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-}
-
-.red {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background-color: #ee3643;
-}
-
-.red:focus {
-  background-color: #ca2c37;
-}
-
-.red:hover {
-  background-color: #ba2732;
 }
 
 .slider-item-drills {
@@ -290,15 +326,47 @@ li {
   background-repeat: no-repeat;
 }
 
-.slider-pointer-left {
-  background-image: url(../img/icon-left.svg);
-  background-position: left center;
+.slider-dots-list {
+  list-style: none;
+}
+
+.slider-dot {
+  background-image: url(../img/slider-dot-indicator.png);
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
-.slider-pointer-right {
+.slider-dot:disabled {
+  background-image: url(../img/slider-dot-off.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slider-dot-disabled {
+  text-align: left;
+}
+
+.slider-current-dot {
+  text-align: right;
+}
+
+.slider-arrows-list {
+  list-style: none;
+}
+
+.slider-arrow {
+  text-align: center;
+}
+
+.slider-arrow-type-next {
   background-image: url(../img/icon-right.svg);
   background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.slider-arrow-type-previous {
+  background-image: url(../img/icon-left.svg);
+  background-position: left center;
   background-repeat: no-repeat;
 }
 
@@ -320,20 +388,26 @@ li {
 }
 
 .catalog-button-buy {
-  background-image: url(../img/icon-cart.svg);/*картинка здесь тоже полупрозрачная*/
+  background-image: url(../img/icon-cart.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-color: #63a63e;
-  box-shadow: 0 3px 0 0; /*это свойство наследуется или .catalog-button-buy не родитель .catalog-button-buy:focus?*/
+  box-shadow: 0 3px 0 0;
+
+  opacity: 0.3;
 }
 
 .catalog-button-buy:focus {
   background-color: #5fbb2d;
+
+  opacity: none;
 }
 
 .catalog-button-buy:hover {
   background-color: #518534;
   box-shadow: none;
+
+  opacity: none;
 }
 
 .catalog-button-bookmarks {
@@ -347,9 +421,13 @@ li {
 }
 
 .catalog-button-bookmarks:hover {
-  color: rgba(50, 66, 92, 0,3);
+  color: rgba(50, 66, 92, 0.3);
 
   outline: 3px solid #c1c6ce;
+}
+
+.pop-cards-list {
+  list-style: none;
 }
 
 .pop-card-title {
@@ -374,20 +452,33 @@ li {
   background-repeat: no-repeat;
 }
 
+.pop-card-item:focus,
 .pop-brand-item:focus {
-  /*Как вычислить характеристики тени*/
+  box-shadow: 10px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .pop-brand-item:hover {
-  /*Как вычислить характеристики тени и сделать лого прозрачным?*/
+  box-shadow: 4px 4px 10px 0px rgba(41, 52, 73, 0.5);
 
+  opacity: 0.3;
+}
+
+.pop-brands-list {
+  list-style: none;
 }
 
 .background-light-gray-blue {
   background-color: #f4f7f9;
 }
 
-.services-buttons {
+.services-narrative,
+.services-delivery-narrative,
+.services-guarantee-narrative,
+.services-credit-narrative {
+  text-align: left;
+}
+
+.services-buttons-list {
   font-family: "Cuprum Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -398,9 +489,11 @@ li {
   background-image: url(../img/services-shadow.png);
   background-position: center right;
   background-repeat: no-repeat;
+
+  list-style: none;
 }
 
-.services-buttons:focus {
+.services-buttons-list:focus {
   background-color: #293449;
 }
 
@@ -408,6 +501,10 @@ li {
   color: #32425c;
 
   background-color: #ffffff;
+}
+
+.services-list {
+  list-style: none;
 }
 
 .services-delivery {
@@ -426,6 +523,21 @@ li {
   background-image: url(../img/services-credit.png);
   background-position: center right;
   background-repeat: no-repeat;
+}
+
+.about-us-narrative {
+  text-align: left;
+}
+
+.about-us-list {
+  font-size: 18px;
+  line-height: 20px;
+
+  list-style: none;
+}
+
+.contacts-narrative {
+  text-align: left;
 }
 
 .contacts-action-close {
@@ -461,6 +573,10 @@ li {
   color: #ffffff;
 }
 
+.main-footer-navigation-list {
+  list-style: none;
+}
+
 .main-footer-navigation-item {
   font-size: 18px;
   line-height: 24px;
@@ -472,15 +588,15 @@ li {
 }
 
 .main-footer-navigation-item:hover {
-  color: rgba(241, 245, 247, 0,5);
+  color: rgba(241, 245, 247, 0.5);
 }
 
 .color-yellow {
   color: #ffd180;
 }
 
-.color-yellow .main-footer-navigation-item:hover {/*правильно ли здесь записано свойство?*/
-  color: rgba(255, 209, 128, 0,5);
+.color-yellow .main-footer-navigation-item:hover {
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .main-footer-copyright {
@@ -489,14 +605,55 @@ li {
   color: #ffffff;
 }
 
-/* как сделать иконки соцсетей другого цвета?*/
-
-.color-yellow .main-footer-copyright:hover {/*правильно ли здесь записано свойство?*/
+.color-yellow .main-footer-copyright:hover {
   color: #c73644;
+}
+
+.social-icon-list {
+  list-style: none;
 }
 
 .social-icon {
   text-align: center;
+}
+
+.social-icon-vk {
+  background-image: url(../img/icon-vk.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon-vk:focus,
+.social-icon-vk:hover {
+  background-image: url(../img/focus-hover-vk.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon-fb {
+  background-image: url(../img/icon-fb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon-fb:focus,
+.social-icon-fb:hover {
+  background-image: url(../img/focus-hover-fb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon-instagram {
+  background-image: url(../img/icon-insta.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon-instagram:focus,
+.social-icon-instagram:hover {
+  background-image: url(../img/focus-hover-insta.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /*стили для каталога*/
@@ -505,7 +662,7 @@ li {
   background-color: #ee3643;
 }
 
-.products-in-cart + .main-header-issue {/*правильно ли здесь записано свойство?*/
+.main-header-issue-active {
   background-color: #63a63e;
 }
 
@@ -517,20 +674,31 @@ li {
 }
 
 .login-block-body-content-container:hover {
-  color: rgba(0, 0, 0, 0,3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.icon-user {
+.icon-user,
+.icon-user:hover
+ {
   background-image: url(../img/icon-user.svg);
   background-position: center center;
-  background-repeat: no-repeat; /*при наведении и клике иконки меняют цвет, как сделать?*/
+  fill: #c5c5c5;
+  background-repeat: no-repeat;
 }
 
-.icon-logout {
+.icon-logout,
+.icon-logout:hover
+ {
   background-image: url(../img/icon-logout.svg);
   background-position: center center;
+  fill: #c5c5c5;
   background-repeat: no-repeat;
-} /*при наведении и клике иконки меняют цвет, как сделать?*/
+}
+
+.icon-user:focus,
+.icon-logout:focus {
+  fill: #32425c;
+}
 
 .login-options-list {
   color: #32425c;
@@ -538,14 +706,17 @@ li {
   line-height: 18px;
 
   text-decoration: underline;
+  text-decoration-color: #32425c;
 }
 
 .login-options-list:focus {
   color: #e9292a;
+  text-decoration-color: #e9292a;
 }
 
 .login-options-list:hover {
-  color: rgba(50, 66, 92, 0,3);
+  color: rgba(50, 66, 92, 0.3);
+  text-decoration-color: rgba(50, 66, 92, 0.3);
 }
 
 .breadcrumbs {
@@ -592,7 +763,8 @@ h1 {
   text-align: center;
 }
 
-.filter-item {
+.filter-item,
+.filter-item:focus {
   font-size: 15px;
   line-height: 20px;
 
@@ -601,11 +773,199 @@ h1 {
   text-align: left;
 }
 
-.filter-button {
+.filter-item:disabled {
+  color: #999999;
+}
+
+.filter-button, {
   font-size: 13px;
   line-height: 18px;
 }
 
+.filter-input {
+  text-align: : center;
+}
+
+.filter-input-checkbox {
+  background-image: url(../img/checkbox-off.svg);
+  fill: #c5c5c5;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:focus {
+  fill: #b5b5b5;
+}
+
+.filter-input-checkbox:disabled {
+  fill: #e9e9e9;
+}
+
+.filter-input-checkbox:checked {
+  background-image: url(../img/checkbox-on.svg);
+  fill: #c5c5c5;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox-checked:focus {
+  fill: #b5b5b5;
+}
+
+.filter-input-checkbox-checked:disabled {
+  fill: #e9e9e9;
+}
+
+.filter-input-radio {
+  background-image: url(../img/radio-on.svg);
+  fill: #c5c5c5;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.filter-input-radio:focus {
+  fill: #b5b5b5;
+}
+
+.filter-input-radio:disabled {
+  fill: #e9e9e9;
+}
+
+.filter-input-radio:checked {
+  background-image: url(../img/radio-off.svg);
+  fill: #c5c5c5;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.filter-input-radio-checked:focus {
+  fill: #b5b5b5;
+}
+
+.filter-input-radio-checked:disabled {
+  fill: #e9e9e9;
+}
+
+/*Далее -- с учетом замечаний наставника*/
+
+.sorting-way-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  list-style: none;
+
+  text-decoration: none;
+  border-bottom: 1px dashed #ee3643;
+}
+
 .sorting-way-item {
-  /*дописать стили*/
+  color: rgba(0 , 0, 0, 0.3);
+}
+
+.sorting-way-item:focus {
+  color: #000000;
+
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+}
+
+.sorting-way-item:hover {
+  color: #ee3643;
+
+  text-decoration: none;
+}
+
+.sorting-order-item {
+  color: rgba(0 , 0, 0, 0.3);
+}
+
+.sorting-order-item:focus {
+  color: #000000;
+}
+
+.sorting-order-item:hover {
+  color: #ee3643;
+}
+
+.sorting-way-current {
+  color: #ee3643;
+}
+
+.min-to-max-price {
+  background-image: url(../img/icon-up-dir.svg);
+  fill: #c5c5c5;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.max-to-min-price {
+  background-image: url(../img/icon-down-dir.svg);
+  fill: #c5c5c5;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.min-to-max-price:focus,
+.max-to-min-price:focus {
+  fill: #231f20;
+}
+
+.min-to-max-price:hover,
+.max-to-min-price:hover {
+  fill: #ee3643;
+}
+
+.min-to-max-price-current {
+  fill: #ee3643;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  font-size: 13px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  outline: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-item:focus {
+  outline: 1px solid #bdc6ca;
+}
+
+.pagination-item:hover {
+  outline: 1px solid #ee3643;
+}
+
+.pagination-item-current {
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.pagination-item-current:focus,
+.pagination-item-current:hover,
+.pagination-item-current:active {
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.narrative {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.puncher-narrative {
+  text-align: left;
 }
