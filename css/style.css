@@ -111,14 +111,14 @@ a {
   color: #ffffff;
 }
 
-.main-header-bookmarks {
+a .main-header-bookmarks {
   background-image: url(../img/icon-bookmark.svg);
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
 }
 
-.main-header-cart {
+a .main-header-cart {
   background-image: url(../img/icon-cart.svg);
   fill: #6a7180;
   background-position: left center;
@@ -129,6 +129,11 @@ a {
 .main-header-bookmarks:hover,
 .main-header-cart:hover {
   background-color: #212a3a;
+}
+
+a .main-header-search-form:hover,
+a .main-header-bookmarks:hover,
+a .main-header-cart:hover {
   fill: #ffffff;
 }
 
@@ -137,11 +142,18 @@ a {
   color: rgba(225, 225, 225, 0.6);
 
   background-color: #212a3a;
+}
+
+a .main-header-cart:active,
+a .main-header-bookmarks:active {
   fill: #8b8e94;
 }
 
 .main-header-search-form:active {
   background-color: #ffffff;
+}
+
+a .main-header-search-form:active {
   fill: #ee3643;
 }
 
@@ -186,33 +198,33 @@ a {
 }
 
 .main-header-buttons-list {
-  font-size: 21px;
-  line-height: 21px;
-
   list-style: none;
 }
 
-.main-header-buttons-list:hover {
+.main-header-buttons-list a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.main-header-buttons-list a:hover {
   color: #ee3643;
 }
 
-.main-header-buttons-list:active {
+.main-header-buttons-list a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-login,
-.header-login:active
- {
+.header-login a,
+.header-login a:active {
   background-image: url(../img/icon-login.svg);
   fill: #293449;
   background-position: left center;
   background-repeat: no-repeat;
-
-  opacity: 0.3;
 }
 
-.header-login:hover {
-  opacity: none;
+.header-login a:hover {
+  fill: #32425c;
 }
 
 .background-secondary {
