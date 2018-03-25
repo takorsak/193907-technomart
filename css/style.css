@@ -206,22 +206,24 @@ a {
   color: #ffffff;
 }
 
-.main-menu-navigation-item:hover,
-.main-menu-navigation-item:active {
+.main-menu-navigation-item:hover {
   background-color: #293449;
 }
 
-.main-menu-navigation-item:hover a,
-.main-menu-navigation-item:active a {
+.main-menu-navigation-item:hover a {
   background-color: #293449;
 }
 
 .main-menu-navigation-item:active {
   color: rgba(255, 255, 255, 0.5);
+
+  background-color: #293449;
 }
 
 .main-menu-navigation-item:active a {
   color: rgba(255, 255, 255, 0.5);
+
+  background-color: #293449;
 }
 
 /*main*/
