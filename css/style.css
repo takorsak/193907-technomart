@@ -681,6 +681,10 @@ a .main-header-search-form:active {
   list-style: none;
 }
 
+.social-icon-list a {
+  color: #ffffff;
+}
+
 .social-icon {
   text-align: center;
 }
@@ -722,6 +726,10 @@ a .main-header-search-form:active {
   background-image: url(../img/focus-hover-insta.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.main-footer-copyright + a {
+  color: #ffd180;
 }
 
 /*стили для каталога*/
