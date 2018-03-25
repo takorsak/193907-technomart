@@ -70,22 +70,13 @@ a {
    background-color: #293449;
  }
 
-.main-header-search-form {
+.main-header-search {
   background-image: url(../img/icon-search.svg);
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
-}
+  padding-left: 20px; /*убрать полсе эксперимента*/
 
-.main-header-search-form:hover {
-  fill: #ffffff;
-}
-
-.main-header-search-form:active {
-  fill: #ee3643;
-}
-
-.main-header-search {
   border: 0;
   outline: none;
 }
@@ -102,62 +93,22 @@ a {
 
 .main-header-search::-moz-placeholder {
   color: #ffffff;
-
-  background-image: url(../img/icon-search.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
-
-  border: 0px;
-  outline: none;
 }
 
 .main-header-search::-webkit-input-placeholder {
   color: #ffffff;
-
-  background-image: url(../img/icon-search.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
-
-  border: 0px;
-  outline: none;
 }
 
 .main-header-search:-ms-input-placeholder {
   color: #ffffff;
-
-  background-image: url(../img/icon-search.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
-
-  border: 0px;
-  outline: none;
 }
 
 .main-header-search::-ms-input-placeholder {
   color: #ffffff;
-
-  background-image: url(../img/icon-search.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
-
-  border: 0px;
-  outline: none;
 }
 
 .main-header-search::placeholder {
   color: #ffffff;
-
-  background-image: url(../img/icon-search.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
-
-  border: 0px;
-  outline: none;
 }
 
 .main-header-bookmarks {
