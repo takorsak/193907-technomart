@@ -43,6 +43,15 @@ a {
   background-color: #ba2732;
 }
 
+
+.visually-hidden {
+   position: absolute;
+   clip: rect(0 0 0 0);
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+}
+
 /*header*/
 
 .background-light {
@@ -71,6 +80,12 @@ a {
  }
 
 .main-header-search {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+
   background-image: url(../img/icon-search.svg);
   fill: #6a7180;
   background-position: left center;
@@ -94,22 +109,47 @@ a {
 }
 
 .main-header-search::-moz-placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #ffffff;
 }
 
 .main-header-search::-webkit-input-placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #ffffff;
 }
 
 .main-header-search:-ms-input-placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #ffffff;
 }
 
 .main-header-search::-ms-input-placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #ffffff;
 }
 
 .main-header-search::placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -224,7 +264,7 @@ a {
   background-color: #32425c;
 }
 
-.navigation-block-body {
+.navigation-block-body-content {
   box-shadow: 0 5px 0 0 #293449;
 }
 
@@ -1071,4 +1111,283 @@ h1 {
 
 .puncher-narrative {
   text-align: left;
+}
+
+
+/*----- Стили для сетки -------*/
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+.block {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.block-body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.block-body-content {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header {
+  margin: 60px ;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-block {
+   margin-bottom: 47px;
+}
+
+.logo-block-body-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-logo {
+  width: 220px;
+  margin-right: 10 px;
+} /*Как совместить здесь лого и картинкую И сделать невидимым текст alt*/
+
+.main-header-search-form {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.main-header-bookmarks {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.main-header-cart {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.main-header-issue {
+  width: 150px;
+  margin: 0;
+}
+
+.info-block-body-content {
+  display: flex;
+}
+
+.main-header-text {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.main-header-adress {
+  width: 270px;
+  margin-right: 69px;
+}
+
+.main-header-buttons-list {
+  width: 282px;
+
+  margin-bottom: 67px;
+  display: flex;
+}
+
+.header-login {
+  width: 121px;
+  margin-right: 10px;
+}
+
+.header-check-in {
+  width: 150px;
+  margin: 0;
+}
+
+.navigation-block-body-content {
+  margin-bottom: 60px;
+}
+
+.main-menu-navigation-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  margin-bottom: 88px;
+}
+
+.promo-block {
+  margin-bottom: 25px;
+}
+
+.promo-block-body {
+  margin-bottom: 55px;
+}
+
+.promo-block-body-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+
+.promo-sale {
+  margin-top: 40px; /*как без этого сделать?*/
+}
+
+.promo {
+  width: 300px;
+  min-height: 123px;
+}
+
+.slider-item-list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-promo {
+  margin: 0 auto;
+  display: flex;
+}
+
+.slider {
+  margin-right: 20px;
+  width: 620px;
+  margin-left: 10px;/*как без этого сделать?*/
+
+}
+
+.promo-block-body-content-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pop-cards-title-block-body-content {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.pop-cards-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pop-card-item {
+  width: 220px;
+  min-height: 318px;
+}
+
+.pop-brands-title-block-body-content {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.pop-brands-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 85px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pop-brand-item {
+  min-height: 145px;
+  min-width: 220px;
+
+  margin: 0 auto;
+}
+
+.services-block-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.services-block-body-content-content {
+  display: flex;
+}
+
+.services-buttons-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 102px;
+  margin-right: 70px;
+  width: 240px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 102px;
+}
+
+.about-company-block-body {
+  margin-bottom: 88px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.about-us-block-body-content {
+  width: 550px;
+}
+
+.contacts-action-block {
+  width: 620px;
+  min-height: 430px; /*Как сверстать модальное окно, чтобы не ломать сетку?*/
+}
+
+.logo-contacts-block-body {
+  display: flex;
+}
+
+.logo-contacts-block-body-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-footer-block-body-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer-navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 40px;
+}
+
+.footer-menu {
+  justify-content: space-between;
+}
+
+.color-yellow {
+  justify-content: space-between;
+}
+
+.copyright-block {
+  display: flex;
+}
+
+.copyright-block-body-content {
+  display: flex;
+  justify-content: space-between;
 }

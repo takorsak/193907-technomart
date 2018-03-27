@@ -14,7 +14,7 @@
 
       <div class="block logo-block background-dark">
 
-        <div class="block-body logo-block-body">
+        <div class="block-body-content logo-block-body-content">
 
           <a class="company-logo">
             Техномарт
@@ -23,15 +23,15 @@
           <form class="main-header-search-form" action="https://technomart.ru" method="get">
               <input class="main-header-buttons main-header-search" type="text" name="search" placeholder="Поиск:">
           </form>
-          <a class="button main-header-buttons main-header-bookmarks" href="#">Закладки:</a>
-          <a class="button main-header-buttons main-header-cart" href="#">Корзина:</a>
+          <a class="button main-header-buttons main-header-bookmarks" href="#">Закладки: 0</a>
+          <a class="button main-header-buttons main-header-cart" href="#">Корзина: 0</a>
           <a class="button main-header-buttons main-header-issue" href="#">Оформить заказ</a>
 
         </div>
 
       </div>
 
-        <div class="block-body info-block-body">
+        <div class="block-body-content info-block-body-content">
 
               <p class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="main-header-info">
@@ -42,14 +42,14 @@
                 <li class="button main-header-buttons-item header-login">
                   <a href="#" aria-label="Вход в личный кабинет">Войти</a>
                 </li>
-                <li class="button main-header-buttons-item">
+                <li class="button main-header-buttons-item header-check-in">
                   <a href="#" aria-label="Регистрация на сайте">Регистрация</a>
                 </li>
               </ul>
 
         </div>
 
-          <nav class="block-body navigation-block-body background-secondary">
+          <nav class="block-body-content navigation-block-body-content background-secondary">
             <ul class="main-menu-navigation-list">
               <li class="main-menu-navigation-item">
                 <a>Главная</a>
@@ -102,45 +102,54 @@
             </div>
           </div>
 
-          <div class="block-body-content promo-block-body-content-content">
-            <div class="promo background-aquamarine promo-sale">
-              <span class="promo-title">Скидка 50%</span>
-              <a class="button promo-button" href="#" aria-label="В раздел «Скидки 50%»">На 350 товаров</a>
-            </div>
-            <div class="promo background-warning promo-delivery">
-              <span class="promo-title">Доставка</span>
-              <a class="button promo-button" href="#" aria-label="В раздел «Доставка»">Бесплатно</a>
-            </div>
-            <div class="slider">
-              <h2 class="visually-hidden">Слайдер с товарами</h2>
-              <ul class="slider-item-list">
-                <li class="slider-item-drills">
-                  <p class="slider-title">Дрели</p><p class="slider-subtitle">Соседям на радость!</p>
-                  <a class="button red" href="technomart-catalog.psd">Открыть каталог</a>
-                </li>
-                <li class="slider-items-perforators">
-                  <p class="slider-title">Перфораторы</p><p class="slider-subtitle">Настоящие мужские игрушки</p>
-                  <a class="button red" href="technomart-catalog.psd">Открыть каталог</a>
-                </li>
-              </ul>
-              <ul class="slider-dots-list" aria-label="Кнопки навигации по слайдам">
-                <li class="slider-dots-item">
-                  <button type="button" class="slider-dot slider-dot-disabled" disabled>Переход к слайду 1</button>
-                </li>
-                <li class="slider-dots-item">
-                  <button type="button" class="slider-dot slider-current-dot">Переход к слайду 2</button>
-                </li>
-              </ul>
-              <ul class="slider-arrows-list" aria-label="Стрелки навигации по слайдам">
-                <li class="slider-arrows-item">
-                  <button type="button" class="slider-arrow slider-arrow-type-next slider-arrow-disabled" disabled>Переход к следующему слайду</button>
-                </li>
-                <li class="slider-arrows-item">
-                  <button type="button" class="slider-arrow slider-arrow-type-previous">Переход к предыдущему слайду</button>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div class="slider-promo">
+
+            <div class="block-body-content promo-block-body-content-slider">
+                <div class="slider">
+                  <h2 class="visually-hidden">Слайдер с товарами</h2>
+                  <ul class="slider-item-list">
+                    <li class="slider-item-drills">
+                      <p class="slider-title">Дрели</p><p class="slider-subtitle">Соседям на радость!</p>
+                      <a class="button red" href="technomart-catalog.psd">Открыть каталог</a>
+                    </li>
+                    <li class="slider-items-perforators">
+                      <p class="slider-title">Перфораторы</p><p class="slider-subtitle">Настоящие мужские игрушки</p>
+                      <a class="button red" href="technomart-catalog.psd">Открыть каталог</a>
+                    </li>
+                  </ul>
+                  <ul class="slider-dots-list" aria-label="Кнопки навигации по слайдам">
+                    <li class="slider-dots-item">
+                      <button type="button" class="slider-dot slider-dot-disabled" disabled>Переход к слайду 1</button>
+                    </li>
+                    <li class="slider-dots-item">
+                      <button type="button" class="slider-dot slider-current-dot">Переход к слайду 2</button>
+                    </li>
+                  </ul>
+                  <ul class="slider-arrows-list" aria-label="Стрелки навигации по слайдам">
+                    <li class="slider-arrows-item">
+                      <button type="button" class="slider-arrow slider-arrow-type-next slider-arrow-disabled" disabled>Переход к следующему слайду</button>
+                    </li>
+                    <li class="slider-arrows-item">
+                      <button type="button" class="slider-arrow slider-arrow-type-previous">Переход к предыдущему слайду</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+               <div class="block-body-content promo-block-body-content-content">
+
+                  <div class="promo background-aquamarine promo-sale">
+                    <span class="promo-title">Скидка 50%</span>
+                    <a class="button promo-button" href="#" aria-label="В раздел «Скидки 50%»">На 350 товаров</a>
+                  </div>
+                  <div class="promo background-warning promo-delivery">
+                    <span class="promo-title">Доставка</span>
+                    <a class="button promo-button" href="#" aria-label="В раздел «Доставка»">Бесплатно</a>
+                  </div>
+
+                </div>
+
+              </div>
 
         </section>
 
@@ -150,7 +159,7 @@
         <section class="block-body pop-cards-block-body">
 
           <div class="block-body-content pop-cards-title-block-body-content background-beige">
-            <h2 class="content-title">Популярные товары</h2>
+            <h2 class="content-title">Популярные товары:</h2>
             <a class="button red" href="#">Все популярные товары</a>
           </div>
 
@@ -293,7 +302,7 @@
                   <button type="button">Кредит</button>
                 </li>
               </ul>
-              </div>
+
               <ul class="services-list">
                 <li class="services-item services-delivery">
                   <h3 class="services-item-title">Доставка</h3>
@@ -320,7 +329,7 @@
 
               <h2 class="content-title">Компания «Техномарт»</h2>
               <p class="narrative about-us-narrative">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-              <p class="narrative about-us-narrative">>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+              <p class="narrative about-us-narrative">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
               <ul class="about-us-list">
                 <li>Деловые линии</li>
                 <li>Автотрейдинг</li>
