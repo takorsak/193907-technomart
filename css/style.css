@@ -553,7 +553,7 @@ a {
 
 .pop-card-item:hover,
 .pop-brand-item:hover {
-  box-shadow: 10px 10px 25px 0px rgba(41, 52, 73, 0.5);
+  box-shadow: 0px 0px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .pop-brand-item:active {
@@ -1150,9 +1150,7 @@ h1 {
 
 html,
 body {
-  /*Временно для сетки*/
   min-width: 1200px;
-  min-height: 3151px;
 }
 
 .block {
@@ -1192,8 +1190,8 @@ body {
 
 .company-logo {
   width: 220px;
-  margin-right: 10 px;
-} /*Как совместить здесь лого и картинкую И сделать невидимым текст alt*/
+  margin-right: 10px;
+}
 
 .main-header-search-form {
   width: 250px;
@@ -1259,26 +1257,27 @@ body {
   margin: 0 auto;
 }
 
-.promo-block {
-  margin-bottom: 25px;
-}
-
 .promo-block-body {
-  margin-bottom: 55px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
-.promo-block-body-content {
+.promo-block-body-content,
+.slider-promo {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -20px;
 }
 
-.promo-sale {
-  margin-top: 40px; /*как без этого сделать?*/
+.slider-promo {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .promo {
   width: 300px;
+  margin-bottom: 20px;
+
+  /*Временно для сетки*/
   min-height: 123px;
 }
 
@@ -1287,21 +1286,10 @@ body {
   padding: 0;
 }
 
-.slider-promo {
-  margin: 0 auto;
-  display: flex;
-}
-
 .slider {
-  margin-right: 20px;
   width: 620px;
-  margin-left: 10px;/*как без этого сделать?*/
-}
-
-.promo-block-body-content-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .pop-cards-title-block-body-content {
@@ -1325,31 +1313,37 @@ body {
 }
 
 .pop-brands-title-block-body-content {
+  width: 940px;
   display: flex;
   margin: 0 auto;
-  margin-bottom: 20px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .pop-brands-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .pop-brand-item {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /*Временно для сетки*/
   min-height: 145px;
-  min-width: 220px;
+}
 
-  margin: 0 auto;
+.pop-brand-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .services-block-body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  padding-top: 65px;
 }
 
 .services-block-body-content-content {
@@ -1371,19 +1365,41 @@ body {
 }
 
 .about-company-block-body {
-  margin-bottom: 88px;
+  width: 940px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 88px;
+  padding-top: 88px;
 }
 
 .about-us-block-body-content {
-  width: 550px;
+  margin: 0;
+  padding: 0;
+  width: 540px;
+  margin-right: 100px;
+  margin-bottom: 88px;
+}
+
+.contacts-block-body-content {
+  width: 300px;
+  margin-bottom: 88px;
 }
 
 .contacts-action-block {
   width: 620px;
-  min-height: 430px; /*Как сверстать модальное окно, чтобы не ломать сетку?*/
+}
+
+.contacts-action-empty-block-body {
+  width: 620px;
+  min-height: 7px;
+  margin-bottom: 46px;
+}
+
+.contacts-action-block-body {
+  display: flex;
+}
+
+.contacts-action-title {
+  margin-right: 10px;
 }
 
 .logo-contacts-block-body {
@@ -1396,6 +1412,7 @@ body {
 }
 
 .navigation-footer-block-body-content {
+  width: 940px;
   display: flex;
   flex-direction: column;
 }
@@ -1537,6 +1554,10 @@ body {
   margin-right: 0;
 }
 
+.catalog-item:hover {
+  box-shadow: 0px 0px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
 .pagination-list {
   margin: 0;
   padding: 0;
@@ -1547,13 +1568,15 @@ body {
 
 .puncher-text-block-body {
   margin: 0 auto;
-  margin-bottom: 0;
+  margin-bottom: 0;а
   display: flex;
   flex-direction: column;
 }
 
 .cart-action-block {
   width: 620px;
+
+  box-shadow: 0 0 40px 0 rgba(41, 52, 73, 0.75);
 }
 
 .empty-cart-action-block-body {
@@ -1573,4 +1596,12 @@ body {
 
 .cart-action-buttons-list {
   display: flex;
+}
+
+.white {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  color: #000000;
 }
