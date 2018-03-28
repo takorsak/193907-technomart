@@ -2,42 +2,49 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт каталог</title>
+    <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <header class="main-header background-light">
 
       <div class="block logo-block background-dark">
 
-        <div class="block-body logo-block-body">
+        <div class="block-body-content logo-block-body-content">
 
           <a class="company-logo">
             Техномарт
             <img src="img/logo-header.png" width="368" height="153" alt="Логотип магазина «Техномарт»">
           </a>
           <form class="main-header-search-form" action="https://technomart.ru" method="get">
-              <input class="items-font" type="text" name="search" placeholder="Поиск">
+              <input class="main-header-buttons main-header-search" type="text" name="search" placeholder="Поиск:">
           </form>
-          <a class="button button-theme-transparent-black" href="#">Закладки</a>
-<!--Стиль у корзины и кнопки "оформить заказ" изменен по сравнению с главной.
+          <a class="button main-header-buttons main-header-bookmarks" href="#">Закладки: 0</a>
+
+<!--Стиль у корзины и кнопки "оформить заказ" изменен по сравнению с главной.-->
           <div class="cart-issue">
             <a class="button main-header-buttons main-header-cart products-in-cart" href="#">Корзина: 10</a>
             <a class="button main-header-buttons main-header-issue main-header-issue-active" href="#">Оформить заказ</a>
           </div>
--->
-        </div>
+<!---->
+          </div>
 
         </div>
 
-          <div class="block-body info-block-body">
+        <div class="block-body-content info-block-body-content">
 
-                <p class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-              <div class="main-header-info">
-                <a class="main-header-telephone" href="tel:+78125550555">+7(812)555-05-55</a>
-                <p class="main-header-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              </div>
+              <p class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <div class="main-header-info">
+              <a class="main-header-telephone" href="tel:+78125550555" aria-label="Телефонный номер компании">+7(812)555-05-55</a>
+              <p class="main-header-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
 
-<!--Стили отличаются от главной
+<!--Стили отличаются от главной-->
+            <div class="user-options">
               <div class="block-body-content-container login-block-body-content-container">
                   <a class="icon-user" href="#" aria-label="Профиль пользователя"></a>
                   <a class="user-name" href="#" aria-label="Личный кабинет пользователя">Равшан Джамшутович</p>
@@ -47,41 +54,42 @@
                 <li><a href="#">Мои заказы</a></li>
                 <li><a href="#">Личный кабинет</a></li>
               </ul>
--->
+            </div>
+<!---->
           </div>
 
-            <nav class="block-body navigation-block-body background-secondary">
-              <ul class="main-menu-navigation-list">
-                <li>
-                  <a>Главная</a>
-                </li>
-                <li>
-                  <a href="#">Компания</a>
-                </li>
-                <li>
-                  <a href="#">Каталог</a>
-                </li>
-                <li>
-                  <a href="#">Новости</a>
-                </li>
-                <li>
-                  <a href="#">Спецпредложения</a>
-                </li>
-                <li>
-                  <a href="#">Доставка</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+          <nav class="block-body-content navigation-block-body-content background-secondary">
+            <ul class="main-menu-navigation-list">
+              <li class="main-menu-navigation-item">
+                <a>Главная</a>
+              </li>
+              <li class="main-menu-navigation-item">
+                <a href="#">Компания</a>
+              </li>
+              <li class="main-menu-navigation-item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="main-menu-navigation-item">
+                <a href="#">Новости</a>
+              </li>
+              <li class="main-menu-navigation-item">
+                <a href="#">Спецпредложения</a>
+              </li>
+              <li class="main-menu-navigation-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="main-menu-navigation-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-          </header>
+    </header>
 
           <main class="container">
 
             <div class="block breadcrumbs-block">
-              <ul class="breadcrumbs">
+              <ul class="block-body-content breadcrumbs">
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Инструмент</a></li>
                 <li><a>Перфораторы</a></li>
@@ -96,102 +104,105 @@
                   <h1>Перфораторы</h1>
                 </div>
 
-                <div class="block-body-content filter-block-body-content">
+                <div class="filter-cards">
 
-                  <div class="block-body-content-container filter-title-block-body-content-container background-beige">
-                    <span class="filter-title">Фильтр:</span>
+                  <div class="block-body-content filter-block-body-content">
+
+                    <div class="block-body-content-container filter-title-block-body-content-container background-beige">
+                      <span class="filter-title">Фильтр:</span>
+                    </div>
+
+                    <form class="filter" action="#" method="get">
+
+                      <fieldset>
+                        <legend class="filter-fieldset-title">Цена:</legend>
+
+                        <div class="filter-block filter-price-slider-block background-beige">
+                          <!--Ползунок будет сделан позже-->
+                          <div class="filter-slider" arial-label="Ползунок с минимальным и максимальным значением цены"></div>
+                        </div>
+                        <div class="filter-block filter-price-value-block background-beige">
+                          <output class="filter-price-value-min" name="priceoutput" aria-label="Минимальное значение цены">0</output>
+                          <output class="filter-price-value-max" name="priceoutput" aria-label="Максимальное значение цены">30000</output>
+                        </div>
+
+                      </fieldset>
+
+                      <fieldset>
+                        <legend class="filter-fieldset-title">Производители:</legend>
+
+                        <ul class="filter-list">
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" id="filter-Bosch" type="checkbox" name="Bosch" checked>
+                            <label for="filter-Bosch">Bosch</label>
+                          </li>
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-Interskol" type="checkbox" name="Интерскол">
+                            <label for="filter-Interskol">Интерскол</label>
+                          </li>
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" id="filter-Makita" type="checkbox" name="Makita" checked>
+                            <label for="filter-Makita">Makita</label>
+                          </li>
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-DeWalt" type="checkbox" name="DeWalt">
+                            <label for="filter-DeWalt">DeWalt</label>
+                          </li>
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="filter-Hitachi" type="checkbox" name="Hitachi">
+                            <label for="filter-Hitachi">Hitachi</label>
+                          </li>
+                        </ul>
+
+                      </fieldset>
+
+                      <fieldset>
+                        <legend class="filter-fieldset-title">Питание:</legend>
+
+                        <ul class="filter-list">
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-radio filter-input-radio-checked" id="filter-rechargeable" type="radio" name="product-group" value="rechargeable" checked>
+                            <label for="filter-rechargeable">Аккумуляторные</label>
+                          </li>
+                          <li class="filter-item">
+                            <input class="visually-hidden filter-input filter-input-radio" id="filter-network" type="radio" name="product-group" value="network">
+                            <label for="filter-network">Сетевые</label>
+                          </li>
+                        </ul>
+
+                      </fieldset>
+
+                      <button class="button filter-button" type="submit">Показать</button>
+
+                    </form>
                   </div>
 
-                  <form class="filter" action="#" method="get">
+                  <div class="block-body-content catalog-block-body-content">
+                    <div class="block-body-content-container sorting-block-body-content-container background-beige">
+                      <span class="filter-title">Сортировка:</span>
 
-                    <fieldset>
-                      <legend class="filter-fieldset-title">Цена:</legend>
-
-                      <div class="filter-block filter-price-slider-block background-beige">
-                        <!--Ползунок будет сделан позже-->
-                      </div>
-                      <div class="filter-block filter-price-value-block background-beige">
-                        <output class="filter-price-value-min" name="priceoutput" aria-label="Минимальное значение цены">0</output>
-                        <output class="filter-price-value-max" name="priceoutput" aria-label="Максимальное значение цены">30000</output>
-                      </div>
-
-                    </fieldset>
-
-                    <fieldset>
-                      <legend class="filter-fieldset-title">Производители:</legend>
-
-                      <ul class="filter-list">
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" id="filter-Bosch" type="checkbox" name="Bosch" checked>
-                          <label for="filter-Bosch">Bosch</label>
-                        </li>
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox" id="filter-Interskol" type="checkbox" name="Интерскол">
-                          <label for="filter-Interskol">Интерскол</label>
-                        </li>
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" id="filter-Makita" type="checkbox" name="Makita" checked>
-                          <label for="filter-Makita">Makita</label>
-                        </li>
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox" id="filter-DeWalt" type="checkbox" name="DeWalt">
-                          <label for="filter-DeWalt">DeWalt</label>
-                        </li>
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-checkbox" id="filter-Hitachi" type="checkbox" name="Hitachi">
-                          <label for="filter-Hitachi">Hitachi</label>
-                        </li>
-                      </ul>
-
-                    </fieldset>
-
-                    <fieldset>
-                      <legend class="filter-fieldset-title">Питание:</legend>
-
-                      <ul class="filter-list">
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-radio filter-input-radio-checked" id="filter-rechargeable" type="radio" name="product-group" value="rechargeable" checked>
-                          <label for="filter-rechargeable">Аккумуляторные</label>
-                        </li>
-                        <li class="filter-item">
-                          <input class="visually-hidden filter-input filter-input-radio" id="filter-network" type="radio" name="product-group" value="network">
-                          <label for="filter-network">Сетевые</label>
-                        </li>
-                      </ul>
-
-                    </fieldset>
-
-                    <button class="button filter-button" type="submit">Показать</button>
-
-                  </form>
-                </div>
-
-                <div class="block-body-content catalog-block-body-content">
-                  <div class="block-body-content-container sorting-block-body-content-container background-beige">
-                    <span class="filter-title">Сортировка:</span>
-
-                      <div class="sorting-way">
-                        <ul class="sorting-way-list" aria-label="Варианты сортировки">
-                          <li class="sorting-way-item">
-                            <a class="sorting-way-price-title sorting-way-current">По цене</a>
-                          </li>
-                          <li class="sorting-way-item">
-                            <a class="sorting-way-type-title">По типу</a>
-                          </li>
-                          <li class="sorting-way-item">
-                            <a class="sorting-way-function-title">По функционалу</a>
-                          </li>
-                        </ul>
-                        <ul class="sorting-order-list" aria-label="Порядок сортировки">
-                          <li class="sorting-order-item">
-                            <a class="visually-hidden min-to-max-price min-to-max-price-current" href="#" title="Сортировка от меньшего к большему"></a>
-                          </li>
-                          <li class="sorting-order-item">
-                            <a class="visually-hidden max-to-min-price" href="#" title="Сортировка от большего к меньшему"></a>
-                          </li>
-                        </ul>
+                        <div class="sorting-way">
+                          <ul class="sorting-way-list" aria-label="Варианты сортировки">
+                            <li class="sorting-way-item">
+                              <a class="sorting-way-price-title sorting-way-current">По цене</a>
+                            </li>
+                            <li class="sorting-way-item">
+                              <a class="sorting-way-type-title">По типу</a>
+                            </li>
+                            <li class="sorting-way-item">
+                              <a class="sorting-way-function-title">По функционалу</a>
+                            </li>
+                          </ul>
+                          <ul class="sorting-order-list" aria-label="Порядок сортировки">
+                            <li class="sorting-order-item">
+                              <a class="visually-hidden min-to-max-price min-to-max-price-current" href="#" title="Сортировка от меньшего к большему"></a>
+                            </li>
+                            <li class="sorting-order-item">
+                              <a class="visually-hidden max-to-min-price" href="#" title="Сортировка от большего к меньшему"></a>
+                            </li>
+                          </ul>
+                       </div>
                      </div>
-                   </div>
 
                     <ul class="catalog-items-list">
                       <li class="catalog-item">
@@ -335,6 +346,9 @@
                         </li>
                       </ul>
                     </div>
+
+                  </div>
+
                   </section>
                 </div>
                 <div class="block puncher-text-block">
@@ -360,7 +374,7 @@
                     </p>
                   </div>
 
-                  <div class="block-body-content navigation-block-body-content">
+                  <div class="block-body-content navigation-footer-block-body-content">
 
                     <ul class="main-footer-navigation-list footer-menu">
                       <li class="main-footer-navigation-item">
@@ -400,25 +414,25 @@
                 </div>
               </div>
 
-              <div class="block copiright-block background-dark">
-                <div class="block-body-content copiright-block-body-content">
-                  <p class="main-footer-copyright">2010-2017 Компания «Техномарт»</p>
-                  <p class="main-footer-copyright">Все права защищены</p>
-                  <ul>
-                    <li><a class="visually-hidden social-icon social-icon-vk" href="#">Вконтакте</a></li>
-                    <li><a class="visually-hidden social-icon social-icon-fb" href="#">Фейсбук</a></li>
-                    <li><a class="visually-hidden social-icon social-icon-instagram" href="#">Инстаграм</a></li>
-                  </ul>
-                  <p class="main-footer-mail">
-                    Обратная связь:
-                    <a class="main-footer-developer-copyright" href="#">mail@htmlacademy.ru</a>
-                  </p>
-                  <p class="main-footer-developer-copyright">
-                    Разработано
-                    <a class="main-footer-developer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-                  </p>
-                </div>
+            <div class="block copyright-block background-dark">
+              <div class="block-body-content copyright-block-body-content">
+                <p class="main-footer-copyright">2010-2017 Компания «Техномарт»</p>
+                <p class="main-footer-copyright">Все права защищены</p>
+                <ul class="social-icon-list">
+                  <li><a class="visually-hidden social-icon social-icon-vk" href="#">Вконтакте</a></li>
+                  <li><a class="visually-hidden social-icon social-icon-fb" href="#">Фейсбук</a></li>
+                  <li><a class="visually-hidden social-icon social-icon-instagram" href="#">Инстаграм</a></li>
+                </ul>
+                <p class="main-footer-copyright">
+                  Обратная связь:
+                  <a class="color-yellow" href="#">mail@htmlacademy.ru</a>
+                </p>
+                <p class="main-footer-copyright">
+                  Разработано
+                  <a class="color-yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </p>
               </div>
+            </div>
 
             </footer>
 
@@ -435,7 +449,7 @@
                     <a class="button red" href="#">Оформить заказ</a>
                   </li>
                   <li>
-                    <a class="button" href="#">Продолжить покупки</a>
+                    <a class="button white" href="#">Продолжить покупки</a>
                   </li>
                 </ul>
               </div>
