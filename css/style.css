@@ -394,14 +394,14 @@ a {
   color: #ffffff;
 }
 
-.slider-item-drills {
+.slider-item-list > .slider-item {
   background-color: #201512;
   background-image: url(../img/slider-drills.jpg);
   background-position: left center;
   background-repeat: no-repeat;
 }
 
-.slider-items-perforators {
+.slider-item-list .red + .slider-item {
   background-color: #756453;
   background-image: url(../img/slider-perforators.jpg);
   background-position: left center;
@@ -1285,11 +1285,12 @@ body {
   margin-top: 0;
 }
 
-ul.slider-item-list li.slider-item-drills {
+ul.slider-item-list li.is-visible {
   display: block;
 }
 
-ul.slider-item-list li.slider-items-perforators {
+ul.slider-item-list li.slider-item {
+  display: none;
   height: 100%;
 }
 
@@ -1298,9 +1299,8 @@ ul.slider-item-list li.slider-items-perforators {
   padding: 0;
 
   /*Временно для сетки*/
-  min-height: 267px;
+  height: 267px;
 }
-
 
 .slider {
   width: 620px;
@@ -1562,6 +1562,7 @@ ul.slider-item-list li.slider-items-perforators {
   width: 220px;
   margin-bottom: 20px;
   margin-right: 20px;
+
   /*Временно для сетки*/
   min-height: 318px;
 }
