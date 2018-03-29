@@ -87,6 +87,7 @@ a {
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
+  padding-left: 20px; /*убрать полсе эксперимента*/
 
   border: 0;
   outline: none;
@@ -1168,13 +1169,17 @@ body {
   align-items: center;
 }
 
+.logo-block {
+   margin-bottom: 47px;
+}
+
 .logo-block-body-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 47px;
 }
 
 .company-logo {
+  width: 220px;
   margin-right: 10px;
 }
 
