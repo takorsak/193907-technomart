@@ -1285,11 +1285,11 @@ body {
   margin-top: 0;
 }
 
-ul.slider-item-list li.is-visible {
+.slider-item.is-visible {
   display: block;
 }
 
-ul.slider-item-list li.slider-item {
+.slider-item {
   display: none;
   height: 100%;
 }
