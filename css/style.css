@@ -333,11 +333,11 @@ a {
   background-repeat: no-repeat;
 }
 
-.new-promo {
+/*.new-promo {
   background-image: url(../img/new-products.png);
   background-position: right top;
   background-repeat: no-repeat;
-}
+}*/
 
 .background-info {
   background-color: #3bbce3;
