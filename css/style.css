@@ -69,16 +69,6 @@ a {
   background-color: #293449;
 }
 
-/*.company-logo {
-  font-size: 24px;
-  line-height: 24px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background-color: #ee3643;
-  box-shadow: 0 5px 0 0 #b52933;
-} отрисовка логотипа на CSS*/
-
 .main-header-buttons {
    line-height: 18px;
    color: #ffffff;
@@ -97,7 +87,6 @@ a {
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
-  padding-left: 20px; /*убрать полсе эксперимента*/
 
   border: 0;
   outline: none;
@@ -1179,17 +1168,13 @@ body {
   align-items: center;
 }
 
-.logo-block {
-   margin-bottom: 47px;
-}
-
 .logo-block-body-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 47px;
 }
 
 .company-logo {
-  width: 220px;
   margin-right: 10px;
 }
 
