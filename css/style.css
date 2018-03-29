@@ -33,6 +33,8 @@ a {
   text-transform: uppercase;
 
   background-color: #ee3643;
+
+  height: 38px;
 }
 
 .red:hover {
