@@ -298,6 +298,15 @@ a {
 
 .promo-button {
   background-color: rgba(0, 0, 0, 0.1);
+
+  display: block;
+  width: 135px;
+
+  display: block;
+
+  margin-left: 25px;
+  margin-right: 140px;
+  margin-top: 15px;
 }
 
 .promo-button:hover {
@@ -868,6 +877,7 @@ h1 {
   color: #32425c;
 
   text-align: left;
+  margin-left: 32px;
 }
 
 .block-body-content-container {
@@ -1014,6 +1024,13 @@ h1 {
   border-bottom: 1px dashed #ee3643;
 }
 
+.sorting-way-item:nth-child(1),
+.sorting-way-item:nth-child(2),
+.sorting-way-item:nth-child(3) {
+  text-decoration: none;
+  border-bottom: 1px dashed #ee3643;
+}
+
 .sorting-way-item {
   color: rgba(0 , 0, 0, 0.3);
 }
@@ -1021,14 +1038,14 @@ h1 {
 .sorting-way-item:hover {
   color: #000000;
 
-  text-decoration: underline;
-  text-decoration-color: #ee3643;
+  text-decoration: none;
+  border-bottom: 1px solid #ee3643;
 }
 
 .sorting-way-item:active {
   color: #ee3643;
 
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .sorting-order-list {
@@ -1087,6 +1104,11 @@ h1 {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 17px;
+  padding-left: 17px;
 
   text-transform: uppercase;
 
@@ -1166,11 +1188,8 @@ body {
 }
 
 .main-header {
-  margin: 60px ;
-
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .logo-block {
@@ -1241,10 +1260,6 @@ body {
   margin: 0;
 }
 
-.navigation-block-body-content {
-  margin-bottom: 60px;
-}
-
 .main-menu-navigation-list {
   display: flex;
   justify-content: space-around;
@@ -1273,9 +1288,8 @@ body {
 .promo {
   width: 300px;
   margin-bottom: 20px;
-
-  /*Временно для сетки*/
-  min-height: 123px;
+  padding-top: 26px;
+  padding-bottom: 22px;
 }
 
 .slider-title {
@@ -1465,6 +1479,7 @@ body {
   padding: 0;
   display: flex;
   margin-right: 119px;
+  margin-top: 30px;
 }
 
 /*Стили для страницы каталога*/
@@ -1488,6 +1503,14 @@ body {
 .breadcrumbs {
   display: flex;
   margin-bottom: 24px;
+}
+
+.breadcrumbs li {
+  margin-right: 30px;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 30px;/*как сделать красивее?*/
 }
 
 .filter-catalog-block-body {
@@ -1529,10 +1552,14 @@ body {
 .filter-title {
   width: 220px;
   margin-bottom: 20px;
+  margin-left: 18px;
 }
 
-.filter {
-  width: 220px;
+.filter-fieldset-title {
+  margin: 0;
+  padding: 0;
+
+  width: 220px;/*Как выровнять эту часть фильтра?*/
 }
 
 .sorting-block-body-content-container {
@@ -1545,6 +1572,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+.sorting-way-item:nth-child(1) {
+  margin-right: 70px;
+}
+
+.sorting-way-item:nth-child(2) {
+  margin-right: 65px;
 }
 
 .catalog-items-list {
@@ -1578,6 +1613,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
+}
+
+.pagination-item {
+  margin-right: 10px;
 }
 
 .puncher-text-block-body {
@@ -1618,4 +1657,32 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-item-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+
+  text-align: center;
+  }
+
+.promo-title {
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 22px;
+}
+
+  .promo-button {
+    padding-top: 12px;
+  }
+
+.content-title {
+  margin: 0;
+}
+
+.pop-cards-title-block-body-content {
+  padding-left: 30px;
+  padding-right: 24px;
 }
