@@ -1680,11 +1680,7 @@ body {
   padding-right: 24px;
 }
 
-.catalog-item-image:hover {
-  display: block;
+.pop-card-item:hover img {
   position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  opacity: 0;
 }
