@@ -1019,9 +1019,6 @@ h1 {
 .sorting-way-list {
 
   list-style: none;
-
-  text-decoration: none;
-  border-bottom: 1px dashed #ee3643;
 }
 
 .sorting-way-item:nth-child(1),
@@ -1675,7 +1672,7 @@ body {
 }
 
   .promo-button {
-    padding-top: 12px;
+    padding-top: 6px;
   }
 
 .content-title {
@@ -1685,4 +1682,8 @@ body {
 .pop-cards-title-block-body-content {
   padding-left: 30px;
   padding-right: 24px;
+}
+
+.catalog-item-image:hover {
+  position: absolute;
 }
