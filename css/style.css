@@ -1506,9 +1506,9 @@ body {
   margin-right: 30px;
 }
 
-.breadcrumbs li:first-child {
-  margin-left: 30px;/*как сделать красивее?*/
-}
+/*.breadcrumbs li:first-child {
+  margin-left: 30px;/*В том месте еще должен быть домик. Домик - это иконка и ссылка на главную страницу. Лучше всего будет не делать отступы между крошками вот таким образом, а сделать это потом с помощью декоративных элементов и отступов от них*/
+}*/
 
 .filter-catalog-block-body {
   margin: 0 auto;
@@ -1555,8 +1555,10 @@ body {
 .filter-fieldset-title {
   margin: 0;
   padding: 0;
+}
 
-  width: 220px;/*Как выровнять эту часть фильтра?*/
+fieldset {
+  padding: 0;
 }
 
 .sorting-block-body-content-container {
