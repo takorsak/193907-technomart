@@ -1693,123 +1693,43 @@ fieldset {
   position: relative;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
 
-  width: 220px;
-  /*1334 временно для сетки*/
-  min-height: 318px;
-
-  .catalog-item-image {
+.catalog-item-image {
   width: 100%;
-  display: flex;
   box-sizing: border-box;
+  height: 166px;
   padding: 20px;
   margin: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
- .card-content {
-   padding: 20px;
+.card-content {
+  padding: 20px;
 }
 
-  .pop-card-title {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  margin: 0;
-}
-
-  .catalog-item-old-price {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #a9a9a9;
-  text-decoration: line-through;
-}
-
-.catalog-item-new-price {
-  background-image: url(../img/red-button.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-  .catalog-item-action {
-    box-sizing: border-box;
-    width: 100%;
-    height: 166px;/*change for "min-height" after an experiment*/
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-  }
-
-  .card-overlay-item:first-child {
-    margin-bottom: 10px;
-  }
-
-  .catalog-item-button {
-  display: inline-block;
-  margin: 0;
-  width: 135px;
-
-
-
-
-.catalog-item-action a {
-  color: #ffffff;
-}
-
-.catalog-item-action + a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #32425c;
-  text-transform: uppercase;
-}
-
-.catalog-button-buy + a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #32425c;
-  text-transform: uppercase;
+.card-overlay {
+  box-sizing: border-box;
+  width: 100%;
+  height: 166px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
 }
 
 .catalog-button-buy {
-  background-image: url(../img/icon-cart.svg);
-  fill: #92c178;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-color: #63a63e;
-  box-shadow: 0 3px 0 0 #367315;
+  margin-bottom: 10px;
 }
 
-.catalog-button-buy:hover {
-  background-color: #5fbb2d;
-}
-
-.catalog-button-buy:active {
-  background-color: #518534;
-  box-shadow: 0 3px 0 0 #518534;
-}
-
-.catalog-button-bookmarks {
-  border: 3px solid #63a63e;
-  border-radius: 2px;
-}
-
-.catalog-button-bookmarks:hover {
-  border: 3px solid #32425c;
-}
-
-.catalog-button-bookmarks:active {
-  color: rgba(50, 66, 92, 0.3);
-
-  border: 3px solid #c1c6ce;
+.pop-card-item:hover .card-overlay,
+.card-overlay:focus-within {
+  opacity: 1;
 }
