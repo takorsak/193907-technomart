@@ -479,6 +479,8 @@ a {
 }
 
 .catalog-button-buy {
+  text-transform: uppercase;
+
   background-image: url(../img/icon-cart.svg);
   fill: #92c178;
   background-position: left center;
@@ -511,6 +513,9 @@ a {
 }
 
 .catalog-button-bookmarks {
+  color: #32425c;
+  text-transform: uppercase;
+
   border: 3px solid #63a63e;
   border-radius: 2px;
 }
@@ -1723,6 +1728,11 @@ fieldset {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+}
+
+.catalog-item-button {
+  width: 135px;
+  display: flex;
 }
 
 .catalog-button-buy {
