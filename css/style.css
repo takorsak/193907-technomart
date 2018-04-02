@@ -1748,8 +1748,10 @@ fieldset {
 }
 
 .contacts-action-close {
-  color: #ee3643;
-  background: #ffffff;
+  background-image: url(../img/close-red-cross.png);
+  background-repeat: no-repeat;
+
+  border: 0;
 }
 
 .contacts-action-block-body {
@@ -1770,6 +1772,8 @@ fieldset {
   margin: 0;
   padding: 0;
   margin: 37px 80px;
+
+  border: 0;
 }
 
 .form-name-email {
@@ -1881,9 +1885,6 @@ label {
 }
 
 .cart-action-block .contacts-action-close {
-  background-image: url(../img/close-red-cross.png);
-  background-repeat: no-repeat;
-
   margin-bottom: 33px;
 }
 
