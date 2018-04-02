@@ -34,7 +34,11 @@ a {
 
   background-color: #ee3643;
 
-  height: 38px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .red:hover {
@@ -51,6 +55,12 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   color: #000000;
+
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .visually-hidden {
@@ -1709,7 +1719,7 @@ fieldset {
   opacity: 1;
 }
 
-/*форма для главной. Когда делала отдельно, все получилось https://codepen.io/takors/pen/wmjYpX?editors=1100. Вставила в код -- непонятно что*/
+/*форма для главной*/
 .form-window {
   margin: 0;
   padding: 0;
@@ -1817,4 +1827,69 @@ label {
 .contacts-action-name,
 .contacts-action-email {
   margin-bottom: 20px;
+}
+
+/*форма для каталога*/
+
+.cart-action-buttons-list {
+  width: 460px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 37px 80px;
+}
+
+.cart-action-buttons-list a {
+  text-decoration: none;
+}
+
+.cart-action-block {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 620px;
+  box-shadow: 0px 0px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.contacts-action-empty-block-body {
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  padding-bottom: 7px;
+  background-color: #ff5357;
+  margin-bottom: 7px;
+}
+
+.cart-action-buttons-block-body {
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  background: #f4f4f4;
+}
+
+.catalog-issue,
+.catalog-continue-shopping {
+  width: 220px;
+}
+
+.close-button {
+  padding-left: 588px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+}
+
+.cart-action-block .contacts-action-close {
+  background-image: url(../img/close-red-cross.png);
+  background-repeat: no-repeat;
+
+  margin-bottom: 33px;
+}
+
+.cart-action-text {
+  display: inline-block;
+  margin-bottom: 65px;
+  margin-left: 176px;
+  margin-right: 126px;
 }
