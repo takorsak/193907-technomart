@@ -1366,7 +1366,7 @@ body {
 .services-block-body {
   display: flex;
   flex-direction: column;
-  padding-top: 65px;
+  padding-top: 68px;
 }
 
 .services-block-body-content-content {
@@ -1384,14 +1384,13 @@ body {
 .services-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 102px;
 }
 
 .about-company-block-body {
   width: 940px;
   display: flex;
   justify-content: space-between;
-  padding-top: 88px;
+  padding-top: 80px;
 }
 
 .about-us-block-body-content {
@@ -1658,11 +1657,6 @@ fieldset {
   margin: 0;
 }
 
-.pop-cards-title-block-body-content {
-  padding-left: 30px;
-  padding-right: 24px;
-}
-
 fieldset {
   padding: 0;
 }
@@ -1747,7 +1741,7 @@ fieldset {
   padding-bottom: 12px;
 }
 
-.contacts-action-close {
+.contacts-action-close {/*Подскажите, пожалуйста, как сделать нормальный крестик.*/
   color: #ee3643;
   background: #ffffff;
 
@@ -1893,4 +1887,52 @@ label {
   margin-bottom: 65px;
   margin-left: 176px;
   margin-right: 126px;
+}
+
+/*выравнивание элементов по высоте*/
+.main-header-search-form,
+.main-header-bookmarks,
+.main-header-cart {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.main-header-issue {
+  padding-top: 12px;
+}
+
+.main-menu-navigation-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.promo-block-body {
+  padding-top: 60px;
+}
+
+.content-title {
+  display: inline-block;
+  margin-top: 31px;
+  margin-bottom: 31px;
+  margin-left: 30px;
+}
+
+.all-popular-goods,
+.all-prodecers {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.pop-cards-block-body {
+  padding-bottom: 23px;
+}
+
+.pop-brands-block-body {
+  padding-bottom: 86px;
+}
+
+.map-contacts-button {
+  margin-top: 40px;
 }
