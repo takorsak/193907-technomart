@@ -1326,7 +1326,6 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .pop-card-item {
@@ -1340,13 +1339,12 @@ body {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .pop-brands-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 85px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1911,7 +1909,7 @@ label {
   padding-top: 60px;
 }
 
-.content-title {
+.pop-title {
   display: inline-block;
   margin-top: 31px;
   margin-bottom: 31px;
@@ -1927,11 +1925,7 @@ label {
 }
 
 .pop-cards-block-body {
-  padding-bottom: 23px;
-}
-
-.pop-brands-block-body {
-  padding-bottom: 86px;
+  padding-bottom: 21px;
 }
 
 .map-contacts-button {
@@ -1954,4 +1948,23 @@ label {
 
 .about-us-item:last-child {
   margin-bottom: 35px;
+}
+
+/*стили для хедера каталога*/
+.cart-issue a {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.main-header-issue-active {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-issue {
+  display: flex;
 }
