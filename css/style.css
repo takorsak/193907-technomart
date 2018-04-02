@@ -312,11 +312,12 @@ a {
   display: block;
   width: 135px;
 
-  display: block;
-
   margin-left: 25px;
   margin-right: 140px;
-  margin-top: 15px;
+  margin-top: 13px;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .promo-button:hover {
@@ -1282,7 +1283,7 @@ body {
 .promo {
   width: 300px;
   margin-bottom: 20px;
-  padding-top: 26px;
+  padding-top: 22px;
   padding-bottom: 22px;
 }
 
@@ -1935,4 +1936,22 @@ label {
 
 .map-contacts-button {
   margin-top: 40px;
+}
+
+/*выравнивание промо-блоков*/
+
+/*как выровнять текст и кнопки в слайдере?*/
+/*как выровнять логотипы поппулярных брендов, ведь они все разного размера?*/
+
+.footer-goods {
+  margin-bottom: 72px;
+}
+
+.about-us-item {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.about-us-item:last-child {
+  margin-bottom: 35px;
 }
