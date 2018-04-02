@@ -1727,11 +1727,7 @@ fieldset {
   background-color: #ff5357;
 }
 
-form {
-  background: #ffffff;
-  border: 1px solid #c1c1c1;/*Временно для сетки*/
-  margin-left: auto;
-  margin-right: auto;
+.contacts-action-block {
   padding-top: 7px;
 }
 
