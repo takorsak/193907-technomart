@@ -645,15 +645,6 @@ a {
   text-align: left;
 }
 
-.contacts-action-close {
-    color: #ee3643;
-}
-
-.contacts-action-title {
-  font-size: 18px;
-  line-height: 18px;
-}
-
 .background-light-danger {
   background-color: #ff5257;
 }
@@ -666,15 +657,6 @@ a {
   background-color: #f4f2ec;
 
   margin-top: 40px;
-}
-
-.contacts-action-block-body {
-  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.75);
-}
-
-.contacts-action-submit {
-  border: 0;
-  outline: none;
 }
 
 /*footer*/
@@ -1360,6 +1342,7 @@ body {
 
 .pop-brand-item {
   width: 220px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
   margin-right: 20px;
   margin-top: 20px;
   /*Временно для сетки*/
@@ -1412,24 +1395,6 @@ body {
 .contacts-block-body-content {
   width: 300px;
   margin-bottom: 88px;
-}
-
-.contacts-action-block {
-  width: 620px;
-}
-
-.contacts-action-empty-block-body {
-  width: 620px;
-  min-height: 7px;
-  margin-bottom: 46px;
-}
-
-.contacts-action-block-body {
-  display: flex;
-}
-
-.contacts-action-title {
-  margin-right: 10px;
 }
 
 .logo-contacts-block-body {
@@ -1692,7 +1657,7 @@ fieldset {
   padding: 0;
 }
 
-/*стили ниже изменены*/
+/*стили для карточек*/
 
 .pop-card-item {
   position: relative;
@@ -1733,7 +1698,7 @@ fieldset {
 .catalog-item-button {
   width: 135px;
   display: flex;
-}
+} /*Теперь куда-то делась надпись на кнопке "в закладки". Помогите, пожалуйста, найти*/
 
 .catalog-button-buy {
   margin-bottom: 10px;
