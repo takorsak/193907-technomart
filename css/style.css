@@ -1748,6 +1748,9 @@ fieldset {
 }
 
 .contacts-action-close {
+  color: #ee3643;
+  background: #ffffff;
+  
   background-image: url(../img/close-red-cross.png);
   background-repeat: no-repeat;
 
