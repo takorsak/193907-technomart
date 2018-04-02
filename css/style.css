@@ -1708,3 +1708,117 @@ fieldset {
 .card-overlay:focus-within {
   opacity: 1;
 }
+
+/*форма для главной. Когда делала отдельно, все получилось https://codepen.io/takors/pen/wmjYpX?editors=1100. Вставила в код -- непонятно что*/
+.form-window {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 620px;
+  box-shadow: 0px 0px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.contacts-action-empty-block-body {
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  padding-bottom: 7px;
+  background-color: #ff5357;
+}
+
+form {
+  background: #ffffff;
+  border: 1px solid #c1c1c1;/*Временно для сетки*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7px;
+}
+
+.close-button {
+  padding-left: 588px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+}
+
+.contacts-action-close {
+  color: #ee3643;
+  background: #ffffff;
+}
+
+.contacts-action-block-body {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.contacts-action-submit-block-body {
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  height: 112px;
+  background: #f4f4f4;
+}
+
+.contacts-action-submit {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  margin: 37px 80px;
+}
+
+.form-name-email {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-name {
+   width: 220px;
+}
+
+.form-email {
+  width: 220px;
+}
+
+label {
+  display: block;
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.contacts-action-name,
+.contacts-action-email {
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border: 1px solid #dee3e4;
+  border-radius: 2px;
+}
+
+.contacts-action-text {
+  width: 460px;
+  padding-top: 13px;
+  padding-bottom: 85px;
+  padding-left: 10px;
+  border: 1px solid #dee3e4;
+  border-radius: 2px;
+  margin-bottom: 37px;
+}
+
+.contacts-action-name,
+.contacts-action-email,
+.contacts-action-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #e70c0c;
+}
+
+.contacts-action-name,
+.contacts-action-email {
+  margin-bottom: 20px;
+}
