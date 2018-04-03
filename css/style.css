@@ -1719,7 +1719,7 @@ fieldset {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
-} 
+}
 
 .catalog-button-buy {
   width: 135px;
@@ -1763,10 +1763,10 @@ fieldset {
   padding-bottom: 12px;
 }
 
-.contacts-action-close {/*Подскажите, пожалуйста, как сделать нормальный крестик.*/
-  color: #ee3643;
-  background: #ffffff;
-
+.contacts-action-close {
+  background-image: url(../img/close-red-cross.png);
+  background-repeat: no-repeat;
+  
   border: 0;
 }
 
@@ -1942,7 +1942,7 @@ label {
 }
 
 .all-popular-goods,
-.all-prodecers {
+.all-producers {
   display: inline-block;
   margin-top: 25px;
   margin-bottom: 25px;
