@@ -409,14 +409,14 @@ a {
 .slider-item-list > .slider-item {
   background-color: #201512;
   background-image: url(../img/slider-drills.jpg);
-  background-position: left center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
 .slider-item-list .red + .slider-item {
   background-color: #756453;
   background-image: url(../img/slider-perforators.jpg);
-  background-position: left center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -486,7 +486,7 @@ a {
 }
 
 .catalog-item-action a {
-  color: #ffffff;
+  color: #32425c;
 }
 
 .catalog-button-buy {
@@ -1283,16 +1283,29 @@ body {
 .promo {
   width: 300px;
   margin-bottom: 20px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .slider-title {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider-subtitle {
+  margin-top: 0;
+}
+
+.slider-button {
+  margin-top: auto;
 }
 
 .slider-item.is-visible {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .slider-item {
@@ -1699,12 +1712,22 @@ fieldset {
 }
 
 .catalog-item-button {
-  width: 135px;
   display: flex;
-} /*Теперь куда-то делась надпись на кнопке "в закладки". Помогите, пожалуйста, найти*/
+
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
 
 .catalog-button-buy {
+  width: 135px;
   margin-bottom: 10px;
+}
+
+.catalog-button-bookmarks {
+  width: 129px;
 }
 
 .pop-card-item:hover .card-overlay,
