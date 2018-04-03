@@ -569,6 +569,7 @@ a {
 }
 
 .pop-card-item:hover,
+.catalog-item,
 .pop-brand-item:hover {
   box-shadow: 0px 0px 25px 0px rgba(41, 52, 73, 0.5);
 }
@@ -1675,7 +1676,8 @@ fieldset {
 
 /*стили для карточек*/
 
-.pop-card-item {
+.pop-card-item,
+.catalog-item {
   position: relative;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -1731,6 +1733,7 @@ fieldset {
 }
 
 .pop-card-item:hover .card-overlay,
+.catalog-item:hover .card-overlay,
 .card-overlay:focus-within {
   opacity: 1;
 }
@@ -1766,7 +1769,7 @@ fieldset {
 .contacts-action-close {
   background-image: url(../img/close-red-cross.png);
   background-repeat: no-repeat;
-  
+
   border: 0;
 }
 
