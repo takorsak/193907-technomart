@@ -377,11 +377,11 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-login a {
+.header-login-button {
   position: relative;
 }
 
-.header-login a::before {
+.header-login-button::before {
   content: "";
 
   position: absolute;
@@ -398,13 +398,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.header-login a:hover::before,
-.header-login a:focus::before {
+.header-login-button:hover::before,
+.header-login-button:focus::before {
   opacity: 1;
   fill: #32425c;
 }
 
-.header-login a:active::before {
+.header-login-button:active::before {
   opacity: 0.3;
 }
 
