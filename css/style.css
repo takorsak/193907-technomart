@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.main-header-search::before {
+.main-header-search::before {/*помогите найти иконку, пожалуйста*/
   content: "";
 
   position: absolute;
