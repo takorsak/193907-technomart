@@ -63,12 +63,22 @@ a {
   padding-bottom: 10px;
 }
 
-.visually-hidden {
-   position: absolute;
-   clip: rect(0 0 0 0);
-   width: 1px;
-   height: 1px;
-   margin: -1px;
+.visually-hidden:not(:focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*header*/
@@ -99,7 +109,7 @@ a {
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
-  padding-left: 20px; /*убрать полсе эксперимента*/
+  padding-left: 39px;
 
   border: 0;
   outline: none;
@@ -167,6 +177,37 @@ a {
   fill: #6a7180;
   background-position: left center;
   background-repeat: no-repeat;
+
+  position: relative;
+  width: 140px;
+  margin-right: 10px;
+  padding-left: 30px;
+}
+
+.main-header-bookmarks::before {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: 25px;
+
+  width: 17px;
+  height: 20px;
+
+  background-image: url(../img/icon-bookmark.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
+
+.main-header-bookmarks:hover::before,
+.main-header-bookmarks:focus::before {
+  opacity: 1;
+}
+
+.main-header-bookmarks:active::before {
+  opacity: 0.3;
 }
 
 .main-header-cart {
@@ -192,6 +233,14 @@ a {
 
   fill: #8b8e94;
 }
+
+.main-header-search-form,
+.main-header-bookmarks,
+.main-header-cart {
+  display: block;
+  padding-top: 12px;
+}
+
 
 .main-header-search-form:active {
   background-color: #ffffff;
@@ -1210,14 +1259,10 @@ body {
   margin-right: 10px;
 }
 
-.main-header-bookmarks {
-  width: 140px;
-  margin-right: 10px;
-}
-
 .main-header-cart {
   width: 140px;
   margin-right: 10px;
+  padding-left: 30px;
 }
 
 .main-header-issue {
@@ -1258,7 +1303,7 @@ body {
 
 .main-menu-navigation-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -1917,20 +1962,22 @@ label {
 }
 
 /*выравнивание элементов по высоте*/
-.main-header-search-form,
-.main-header-bookmarks,
-.main-header-cart {
-  display: inline-block;
-  margin-top: 12px;
-}
 
 .main-header-issue {
   padding-top: 12px;
 }
 
-.main-menu-navigation-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.main-menu-navigation-item a {
+  display: block;
+  padding: 20px 25px;
+}
+
+.main-menu-navigation-list:first-child {
+  padding-left: 50px;
+}
+
+.main-menu-navigation-list:last-child {
+  padding-right: 50px;
 }
 
 .promo-block-body {
