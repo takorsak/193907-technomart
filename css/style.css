@@ -327,6 +327,7 @@ input[type="radio"].visually-hidden {
   padding-right: 46px;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 10px;
 
   border: 3px solid #ffffff;
 }
@@ -335,8 +336,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 16px;
+  top: 12px;
+  left: 18px;
 
   width: 22px;
   height: 20px;
@@ -1332,6 +1333,7 @@ body {
 
 .info-block-body-content {
   display: flex;
+  align-items: center;
 }
 
 .main-header-text {
@@ -1354,11 +1356,15 @@ body {
 .header-login {
   width: 121px;
   margin-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .header-check-in {
   width: 150px;
   margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .main-menu-navigation-list {
