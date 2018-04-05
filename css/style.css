@@ -325,9 +325,11 @@ input[type="radio"].visually-hidden {
 
   padding-left: 70px;
   padding-right: 46px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   margin-bottom: 10px;
+
+  display: block;
 
   border: 3px solid #ffffff;
 }
@@ -336,7 +338,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 9px;
   left: 18px;
 
   width: 22px;
@@ -353,6 +355,8 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+
+  display: block;
 }
 
 .main-header-buttons-list {
@@ -373,16 +377,31 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-login a,
-.header-login a:active {
+.header-login a::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 14px;
+
+  width: 22px;
+  height: 20px;
+
   background-image: url(../img/icon-login.svg);
-  fill: #293449;
-  background-position: left center;
+  background-position: 0 0;
   background-repeat: no-repeat;
+
+  opacity: 0.3;
 }
 
-.header-login a:hover {
+.header-login a:hover::before,
+.header-login a:focus::before {
+  opacity: 1;
   fill: #32425c;
+}
+
+.header-login a:active::before {
+  opacity: 0.3;
 }
 
 .background-secondary {
@@ -1333,12 +1352,14 @@ body {
 
 .info-block-body-content {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .main-header-text {
   width: 300px;
   margin-right: 20px;
+
+  align-self: flex-start;
 }
 
 .main-header-adress {
@@ -1358,6 +1379,7 @@ body {
   margin-right: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 48px;
 }
 
 .header-check-in {
