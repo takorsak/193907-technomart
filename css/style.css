@@ -173,11 +173,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-bookmarks {
-  background-image: url(../img/icon-bookmark.svg);
-  fill: #6a7180;
-  background-position: left center;
-  background-repeat: no-repeat;
-
   position: relative;
   width: 140px;
   margin-right: 10px;
@@ -188,8 +183,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 9px;
-  left: 25px;
+  top: 11px;
+  left: 30px;
 
   width: 17px;
   height: 20px;
