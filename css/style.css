@@ -378,6 +378,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header-login-button {
+  width: 121px;
+  margin-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 48px;
+
   position: relative;
 }
 
@@ -1376,14 +1382,6 @@ body {
 
   margin-bottom: 67px;
   display: flex;
-}
-
-.header-login {
-  width: 121px;
-  margin-right: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 48px;
 }
 
 .header-check-in {
