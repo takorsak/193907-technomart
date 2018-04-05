@@ -384,7 +384,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 13px;
-  left: 14px;
+  left: 16px;
 
   width: 22px;
   height: 20px;
@@ -392,8 +392,6 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/icon-login.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
-
-  background-color: red;
 }
 
 .header-login-button:hover::before,
