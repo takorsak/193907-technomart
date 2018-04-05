@@ -378,7 +378,8 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-login-button::before {
+.header-login-button::before,
+ .header-login-button:active::before{
   content: "";
 
   position: absolute;
@@ -392,17 +393,12 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   background-repeat: no-repeat;
 
-  opacity: 0.3;
+  background-color: red;
 }
 
 .header-login-button:hover::before,
 .header-login-button:focus::before {
-  opacity: 1;
   fill: #32425c;
-}
-
-.header-login-button:active::before {
-  opacity: 0.3;
 }
 
 .background-secondary {
