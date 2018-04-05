@@ -106,6 +106,8 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: 400;
 
+  padding-left: 39px;
+
   border: 0;
   outline: none;
 }
