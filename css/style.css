@@ -520,7 +520,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 30px;
-  left: 210px;
+  left: 194px;
 
   width: 80px;
   height: 64px;
@@ -543,7 +543,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 30px;
-  left: 210px;
+  left: 192px;
 
   width: 80px;
   height: 68px;
@@ -566,7 +566,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 30px;
-  left: 210px;
+  left: 194px;
 
   width: 63px;
   height: 75px;
@@ -589,7 +589,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 30px;
-  left: 210px;
+  left: 192px;
 
   width: 83px;
   height: 68px;
@@ -2163,6 +2163,7 @@ label {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-right: 25px;
+  padding: 10px 55px;
 }
 
 .pop-cards-block-body {
