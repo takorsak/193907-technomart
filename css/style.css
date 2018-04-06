@@ -980,6 +980,10 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
+.main-footer-copyright-text {
+  display: flex;
+  flex-direction: column;
+}
 /*стили для каталога*/
 
 .cart-issue a {
