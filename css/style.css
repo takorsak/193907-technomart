@@ -940,20 +940,44 @@ input[type="radio"].visually-hidden {
   color: #ffd180;
 }
 
+.copyright-block-body-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 31px;
+}
+
+.main-footer-copyright {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.social-icon-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .social-icon-list {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 133px;
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social-icon {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 43px;
   height: 43px;
 
   background-color: #212a3a;
+
+  border-radius: 50px;
 }
 
 /*стили для каталога*/
@@ -1625,29 +1649,6 @@ body {
 
 .color-yellow {
   justify-content: space-between;
-}
-
-.copyright-block {
-  display: flex;
-}
-
-.copyright-block-body-content {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 160px;
-}
-
-.main-footer-copyright {
-  display: flex;
-  flex-direction: column;
-}
-
-.social-icon-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-right: 119px;
-  margin-top: 30px;
 }
 
 /*Стили для страницы каталога*/
