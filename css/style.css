@@ -762,6 +762,10 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .price {
@@ -780,20 +784,27 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #a9a9a9;
   text-decoration: line-through;
+
+  display: block;
+  margin-bottom: 10px;
 }
 
 .catalog-item-new-price {
   position: relative;
   display: block;
+  width: 55px;
   padding-left: 35px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 10px;
   margin-bottom: 20px;
   margin-left: -25px;
 
   background-color: #ee3643;
+}
+
+.new-card {
+  margin-top: 28px;
 }
 
 .catalog-item-new-price::after {
@@ -913,7 +924,7 @@ input[type="radio"].visually-hidden {
 
 /*footer*/
 .main-footer-logo {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .footer-contacts {
@@ -1605,8 +1616,6 @@ body {
 
 .pop-card-item { /*как повесить на карточку ярлык new?*/
   width: 220px;
-  /*временно для сетки*/
-  min-height: 318px;
 }
 
 .pop-brands-title-block-body-content {
