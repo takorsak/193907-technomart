@@ -953,6 +953,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.main-footer-copyright-text {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .social-icon-list {
   margin: 0;
   padding: 0;
