@@ -944,53 +944,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.social-icon-list a {
-  color: #ffffff;
-}
-
-.social-icon {
-  text-align: center;
-}
-
-/*.social-icon-vk {
-  background-image: url(../img/icon-vk.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}*/
-
-.social-icon-vk:hover,
-.social-icon-vk:active {
-  background-image: url(../img/focus-hover-vk.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.social-icon-fb {
-  background-image: url(../img/icon-fb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.social-icon-fb:hover,
-.social-icon-fb:active {
-  background-image: url(../img/focus-hover-fb.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.social-icon-instagram {
-  background-image: url(../img/icon-insta.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.social-icon-instagram:hover,
-.social-icon-instagram:active {
-  background-image: url(../img/focus-hover-insta.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 /*стили для каталога*/
 
 .cart-issue a {
