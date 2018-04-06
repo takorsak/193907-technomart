@@ -953,11 +953,11 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.main-footer-developer-copyright-text {
+/*.main-footer-developer-copyright-text {
   width: 300px;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 .social-icon-list {
   margin: 0;
