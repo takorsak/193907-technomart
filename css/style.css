@@ -328,7 +328,7 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   margin-bottom: 10px;
-  margin-right: 68px;
+  margin-right: 72px;
 
   display: block;
 
@@ -1370,11 +1370,11 @@ body {
 }
 
 .header-login {
-  width: 121px;
+  width: 73px;
   margin-right: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 45px;
+  padding-left: 48px;
   position: relative;
 }
 
