@@ -952,11 +952,11 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.social-icon-vk {
+/*.social-icon-vk {
   background-image: url(../img/icon-vk.png);
   background-position: center center;
   background-repeat: no-repeat;
-}
+}*/
 
 .social-icon-vk:hover,
 .social-icon-vk:active {
@@ -1510,6 +1510,8 @@ body {
 
 .slider-button {
   margin-top: auto;
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 .slider-item.is-visible {
