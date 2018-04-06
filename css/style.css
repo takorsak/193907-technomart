@@ -512,8 +512,21 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-tools {
+  position: relative;
+}
+
+.promo-tools::after {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  left: 210px;
+
+  width: 80px;
+  height: 64px;
+
   background-image: url(../img/icon-promo-tools.svg);
-  background-position: right center;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
@@ -522,8 +535,21 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-equipment {
+  position: relative;
+}
+
+.promo-tools::after {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  left: 210px;
+
+  width: 80px;
+  height: 68px;
+
   background-image: url(../img/icon-promo-equipment.svg);
-  background-position: right center;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
@@ -532,14 +558,44 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-sale {
+  position: relative;
+}
+
+.promo-sale::after {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  left: 210px;
+
+  width: 63px;
+  height: 75px;
+
   background-image: url(../img/icon-promo-sale.svg);
-  background-position: right center;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
+.background-aquamarine {
+  background-color: #8ed78f;
+}
+
 .promo-delivery {
+  position: relative;
+}
+
+.promo-delivery::after {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  left: 210px;
+
+  width: 83px;
+  height: 68px;
+
   background-image: url(../img/icon-promo-delivery.svg);
-  background-position: right center;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
