@@ -396,7 +396,7 @@ input[type="radio"].visually-hidden {
 
 .header-login-button:hover::before,
 .header-login-button:focus::before {
-  fill: #32425c;
+  fill: #32425c; /*как сделать смену цвета svg?*/
 }
 
 .background-secondary {
@@ -470,16 +470,44 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-materials {
-  background-image: url(../img/icon-promo-materials.svg);
-  background-position: right center;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
-/*.new-promo {
-  background-image: url(../img/new-products.png);
-  background-position: right top;
+.promo-materials::after {
+  content: "";
+
+  position: absolute;
+  top: 30px;
+  left: 210px;
+
+  width: 55px;
+  height: 75px;
+
+  background-image: url(../img/icon-promo-materials.svg);
+  background-position: 0 0;
   background-repeat: no-repeat;
-}*/
+
+  z-index: 1;
+}
+
+.promo-materials::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 240px;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../img/new-products.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  background-color: red;
+
+  z-index: 2;
+}
 
 .background-info {
   background-color: #3bbce3;
