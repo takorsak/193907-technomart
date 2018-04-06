@@ -941,7 +941,19 @@ input[type="radio"].visually-hidden {
 }
 
 .social-icon-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 133px;
   list-style: none;
+}
+
+.social-icon {
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+
+  background-color: #212a3a;
 }
 
 /*стили для каталога*/
