@@ -900,8 +900,18 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.service-button:hover {
+.service-button:hover,
+.service-button:focus {
   background-color: #293449;
+  outline: none;
+}
+
+.service-button:active {
+  color: #32425c;
+
+  background-color: #ffffff;
+  border: none;
+  outline: none;
 }
 
 .services-list {
@@ -915,8 +925,22 @@ input[type="radio"].visually-hidden {
 }
 
 .services-delivery {
+  position: relative;
+  width: 630px;
+}
+
+.services-delivery::after {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  left: 170px;
+
+  width: 420px;
+  height: 260px;
+
   background-image: url(../img/services-delivery.png);
-  background-position: center right;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
@@ -1699,6 +1723,8 @@ body {
   background-image: url(../img/services-shadow.png);
   background-position: right;
   background-repeat: no-repeat;
+
+  z-index: 1;
 }
 
 .services-list {
