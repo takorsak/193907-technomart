@@ -1772,6 +1772,10 @@ body {
   margin-right: 0;
 }
 
+.pop-brand-img {
+  text-align: center;
+}
+
 .services-block-body {
   display: flex;
   flex-direction: column;
@@ -2330,10 +2334,11 @@ label {
 }
 
 .more-about-the-company {
-  padding: 10px 40px;
-
-  display: block;
+  display: inline-block;
+  margin: 0;
   margin-top: 40px;
+  padding: 0;
+  padding: 10px 40px;
 }
 
 /*выравнивание промо-блоков*/
