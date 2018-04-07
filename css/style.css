@@ -1955,9 +1955,6 @@ fieldset {
   width: 220px;
   margin-bottom: 20px;
   margin-right: 20px;
-
-  /*Временно для сетки*/
-  min-height: 318px;
 }
 
 .catalog-item:nth-child(3n) {
