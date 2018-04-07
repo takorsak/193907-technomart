@@ -938,7 +938,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.services-block-body::after {
+.services-block-body::after {/*правильно ли сделано? ведь картинка будет переключаться вместе со слайдами услуг?*/
   content: "";
 
   position: absolute;
@@ -966,7 +966,15 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-narrative {
+  display: inline-block;
   text-align: left;
+  width: 524px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.about-us-narrative + .about-us-narrative {
+  width: 390px;
 }
 
 .about-us-list {
@@ -974,10 +982,22 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
 
   list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-item {
+  display: block;
+  margin-top: 22px;
 }
 
 .contacts-narrative {
+  display: inline-block;
   text-align: left;
+  width: 180px;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .background-light-danger {
@@ -990,6 +1010,8 @@ input[type="radio"].visually-hidden {
 
 .map {
   background-color: #f4f2ec;
+
+  display: block;
 
   margin-top: 40px;
 }
@@ -2272,24 +2294,22 @@ label {
 
 .map-contacts-button {
   margin-top: 40px;
+  padding: 10px 60px;
+}
+
+.more-about-the-company {
+  padding: 10px 40px;
+
+  display: block;
+  margin-top: 40px;
 }
 
 /*выравнивание промо-блоков*/
 
-/*как выровнять текст и кнопки в слайдере?*/
 /*как выровнять логотипы популярных брендов, ведь они все разного размера?*/
 
 .footer-goods {
   margin-bottom: 72px;
-}
-
-.about-us-item {
-  display: block;
-  margin-bottom: 22px;
-}
-
-.about-us-item:last-child {
-  margin-bottom: 35px;
 }
 
 /*стили для хедера каталога*/
