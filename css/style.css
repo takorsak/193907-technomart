@@ -1693,6 +1693,9 @@ body {
 
 .services-block-body-content-content {
   display: flex;
+}
+
+.services-buttons-list {
   background-image: url(../img/services-shadow.png);
   background-position: right;
   background-repeat: no-repeat;
