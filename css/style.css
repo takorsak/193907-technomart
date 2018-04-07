@@ -846,7 +846,30 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
+.services-narrative {
+  display: inline-block;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.services-item-title {
+  margin: 0;
+  padding: 0;
+}
+
 .services-buttons-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 102px;
+  margin-right: 70px;
+
+  list-style: none;
+}
+
+.service-button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -854,25 +877,41 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: #32425c;
-  background-image: url(../img/services-shadow.png);
-  background-position: center right;
-  background-repeat: no-repeat;
+  border-width: 2px;
+  border-bottom: 2px solid #293449;
+  border-top: 2px solid #405069;
+  border-right: none;
+  border-left: none;
 
-  list-style: none;
-}
-
-.services-buttons-list:hover {
-  background-color: #293449;
+  width: 240px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-left: 23px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .services-current-button {
   color: #32425c;
 
   background-color: #ffffff;
+  border: none;
+}
+
+.service-button:hover {
+  background-color: #293449;
 }
 
 .services-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  width: 275px;
 }
 
 .services-delivery {
@@ -1654,14 +1693,9 @@ body {
 
 .services-block-body-content-content {
   display: flex;
-}
-
-.services-buttons-list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 102px;
-  margin-right: 70px;
-  width: 240px;
+  background-image: url(../img/services-shadow.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .services-list {
