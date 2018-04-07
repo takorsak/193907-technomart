@@ -930,23 +930,12 @@ input[type="radio"].visually-hidden {
 }
 
 .services-delivery {
-  position: relative;
-}
-
-.services-delivery::after {
-  content: "";
-
-  position: absolute;
-  top: 20px;
-  left: 155px;
-
-  width: 420px;
-  height: 260px;
-
   background-image: url(../img/services-delivery.png);
-  background-position: 0 0;
+  background-position: right center;
   background-repeat: no-repeat;
 }
+
+
 
 .services-guarantee {
   background-image: url(../img/services-guarantee.png);
