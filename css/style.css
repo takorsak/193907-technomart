@@ -689,7 +689,7 @@ input[type="radio"].visually-hidden {
 .content-title {
   font-size: 30px;
   line-height: 30px;
-  color: #32425c;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -858,6 +858,11 @@ input[type="radio"].visually-hidden {
 .services-item-title {
   margin: 0;
   padding: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
 }
 
 .services-buttons-list {
@@ -926,7 +931,6 @@ input[type="radio"].visually-hidden {
 
 .services-delivery {
   position: relative;
-  width: 630px;
 }
 
 .services-delivery::after {
@@ -934,7 +938,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 20px;
-  left: 170px;
+  left: 155px;
 
   width: 420px;
   height: 260px;
