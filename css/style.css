@@ -237,6 +237,10 @@ input[type="radio"].visually-hidden {
   padding-left: 30px;
 }
 
+.products-in-cart {
+  width: 150px;
+}
+
 .main-header-cart::before {
   content: "";
 
@@ -804,7 +808,7 @@ input[type="radio"].visually-hidden {
 }
 
 .new-card {
-  margin-top: 28px;
+  margin-top: 35px;
 }
 
 .catalog-item-new-price::after {
