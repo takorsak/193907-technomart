@@ -115,7 +115,11 @@ input[type="radio"].visually-hidden {
   padding-left: 50px;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 190px;
+  width: 125px;
+
+  background-image: url(../img/icon-search.svg);
+  background-position: 12 20;
+  background-repeat: no-repeat;
 }
 
 .main-header-search::before {/*помогите найти иконку, пожалуйста*/
@@ -329,7 +333,7 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-bottom: 9px;
   margin-bottom: 10px;
-  margin-right: 72px;
+  margin-right: 50px;
 
   display: block;
 
@@ -1588,12 +1592,13 @@ body {
 
 .logo-block-body-content {
   display: flex;
-  justify-content: space-between;
 }
 
 .company-logo {
   width: 220px;
   height: 42px;
+  margin: 0;
+  padding: 0;
 
   box-shadow: 0 3px 0 0 #b52933;
 }
@@ -1609,8 +1614,9 @@ body {
 }
 
 .main-header-text {
-  width: 300px;
-  margin-right: 20px;
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 70px;
 
   align-self: flex-start;
 }
@@ -1625,6 +1631,22 @@ body {
 
   margin-bottom: 67px;
   display: flex;
+}
+
+.user-name {
+  position: relative;
+  display: inline-block;
+  width: 290px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+
+  margin-bottom: 10px;
+
+
+  background-color: #ffffff;
 }
 
 .header-login {
@@ -1834,9 +1856,9 @@ body {
 
 /*Стили для страницы каталога*/
 
-.login-block-body-content-container a {
+.login-block-body-content-container {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
 }
 
 .main-header-internal-page {
