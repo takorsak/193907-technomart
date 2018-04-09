@@ -324,14 +324,13 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #ee3643;
 
+  display: inline-block;
+  margin: 0;
+  padding: 0;
   padding-left: 70px;
   padding-right: 46px;
   padding-top: 9px;
   padding-bottom: 9px;
-  margin-bottom: 10px;
-  margin-right: 50px;
-
-  display: block;
 
   border: 3px solid #ffffff;
 }
@@ -358,7 +357,10 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #32425c;
 
-  display: block;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
 }
 
 .main-header-buttons-list {
@@ -1191,8 +1193,6 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-
-  text-align: center;
 }
 
 .login-block-body-content-container a:active {
@@ -1578,7 +1578,6 @@ body {
 }
 
 .main-header {
-  align-items: center;
   padding-bottom: 60px;
 }
 
@@ -1610,9 +1609,8 @@ body {
 }
 
 .main-header-text {
-  width: 200px;
-  margin-left: 50px;
-  margin-right: 70px;
+  margin-left: 45px;
+  margin-right: 60px;
 
   align-self: flex-start;
 }
@@ -1857,10 +1855,24 @@ body {
   align-items: baseline;
 
   padding-top: 12px;
-  padding-bottom: 12px;
-  margin-bottom: 16px;
+   padding-bottom: 12px;
+   margin-bottom: 10px;
+   padding-left: 15px;
+   padding-right: 10px;
 
-  background-color: #ffffff;
+   background-color: #ffffff;
+
+   width: 275px;
+}
+
+.icon-user {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icon-logout {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .main-header-internal-page {
@@ -1871,7 +1883,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
 .breadcrumbs {
