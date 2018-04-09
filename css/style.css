@@ -1855,6 +1855,12 @@ body {
 .login-block-body-content-container {
   display: flex;
   align-items: baseline;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+
+  background-color: #ffffff;
 }
 
 .main-header-internal-page {
