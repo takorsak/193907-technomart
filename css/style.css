@@ -209,7 +209,8 @@ input[type="radio"].visually-hidden {
 
 .main-header-bookmarks {
   position: relative;
-  width: 150px;
+  width: 80px;
+  padding-right: 20px;
   padding-left: 50px;
 }
 
@@ -241,12 +242,9 @@ input[type="radio"].visually-hidden {
 
 .main-header-cart {
   position: relative;
-  width: 150px;
+  width: 80px;
+  padding-right: 20px;
   padding-left: 50px;
-}
-
-.products-in-cart {
-  width: 150px;
 }
 
 .main-header-cart::before {
@@ -279,8 +277,6 @@ input[type="radio"].visually-hidden {
 .main-header-cart:hover
  {
   background-color: #212a3a;
-
-  fill: #ffffff;
 }
 
 .main-header-cart:active,
@@ -294,7 +290,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-bookmarks,
 .main-header-cart {
-  display: block;
+  display: inline-block;
   padding-top: 12px;
 }
 
