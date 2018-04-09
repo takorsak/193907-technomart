@@ -106,10 +106,16 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-weight: 400;
 
-  padding-left: 39px;
-
   border: 0;
   outline: none;
+
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 190px;
 }
 
 .main-header-search::before {/*помогите найти иконку, пожалуйста*/
@@ -117,7 +123,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 12px;
-  left: 30px;
+  left: 25px;
 
   width: 20px;
   height: 19px;
@@ -199,9 +205,8 @@ input[type="radio"].visually-hidden {
 
 .main-header-bookmarks {
   position: relative;
-  width: 140px;
-  margin-right: 10px;
-  padding-left: 30px;
+  width: 150px;
+  padding-left: 50px;
 }
 
 .main-header-bookmarks::before {
@@ -209,7 +214,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 12px;
-  left: 30px;
+  left: 20px;
 
   width: 17px;
   height: 20px;
@@ -232,9 +237,8 @@ input[type="radio"].visually-hidden {
 
 .main-header-cart {
   position: relative;
-  width: 140px;
-  margin-right: 10px;
-  padding-left: 30px;
+  width: 150px;
+  padding-left: 50px;
 }
 
 .products-in-cart {
@@ -246,9 +250,9 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 12px;
-  left: 30px;
+  left: 20px;
 
-  width: 19px;
+  width: 20px;
   height: 19px;
 
   background-image: url(../img/icon-cart.svg);
@@ -284,22 +288,15 @@ input[type="radio"].visually-hidden {
   fill: #8b8e94;
 }
 
-.main-header-search-form,
 .main-header-bookmarks,
 .main-header-cart {
   display: block;
   padding-top: 12px;
 }
 
-
-.main-header-search-form:active {
-  background-color: #ffffff;
-
-  fill: #ee3643;
-}
-
 .main-header-issue {
   background-color: #63a63e;
+  text-align: center;
 }
 
 .main-header-issue:hover {
@@ -1601,14 +1598,8 @@ body {
 .company-logo {
   width: 220px;
   height: 42px;
-  margin-right: 10px;
 
   box-shadow: 0 3px 0 0 #b52933;
-}
-
-.main-header-search-form {
-  width: 250px;
-  margin-right: 10px;
 }
 
 .main-header-issue {
@@ -2290,6 +2281,8 @@ label {
 
 .main-header-issue {
   padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .main-menu-navigation-item a {
@@ -2357,12 +2350,6 @@ label {
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-.main-header-issue-active {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
 }
 
 .cart-issue {
